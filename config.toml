@@ -1,0 +1,9 @@
+title = "Andrew J. Camenga"
+baseURL = "https://andrewcamenga.com"
+copyright = "&copy;{year}"
+
+defaultContentLanguage = "en"
+languageCode = "en-us"
+removePathAccents = true
+
+theme = "ajc"
