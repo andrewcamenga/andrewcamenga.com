@@ -2,4 +2,7 @@
   <h1>{{ .Title }}</h1>
   <p class="subtitle">{{ .Date.Format "January 2, 2006" }}</p>
   {{ .Content }}
+  <hr/>
+  {{if .PrevInSection}}<a href="{{.PrevInSection.Permalink}}">Previous</a>{{end}}
+  {{if .NextInSection}}<a href="{{.NextInSection.Permalink}}">Next</a>{{end}}
 {{ end }}
