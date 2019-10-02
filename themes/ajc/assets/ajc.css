@@ -1,14 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Oswald:600|Roboto+Slab:400,700");
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Oswald", sans-serif;
-}
-
 /*! bulma.io v0.7.5 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
@@ -1075,11 +1066,11 @@ a.has-text-danger:hover, a.has-text-danger:focus {
 }
 
 .is-family-primary {
-  font-family: "Oswald", sans-serif !important;
+  font-family: "Roboto Slab", serif !important;
 }
 
 .is-family-secondary {
-  font-family: "Roboto Slab", serif !important;
+  font-family: "Oswald", sans-serif !important;
 }
 
 .is-family-sans-serif {
@@ -9149,6 +9140,44 @@ label.panel-block:hover {
 .footer {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem;
+}
+
+@media screen {
+  .navbar-center {
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-direction: row;
+  }
+
+  .navbar-link, .navbar-item {
+    align-items: center;
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 0;
+    justify-content: center;
+  }
+
+  .navbar-dropdown .navbar-item {
+    justify-content: left;
+  }
+
+  .wrapper {
+    max-width: 40rem;
+    margin: auto;
+  }
+
+  h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Oswald", sans-serif;
+  }
 }
 
 /*# sourceMappingURL=ajc.css.map */
