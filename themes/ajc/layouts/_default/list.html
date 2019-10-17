@@ -1,5 +1,13 @@
 {{ define "main" }}
-  {{ range .Data.Pages }}
-    <h1><a href={{ .Permalink }}>{{ .Date.Format "2006-01-02" }} | {{ .Title }}</a></h1>
+  {{ range (where .Site.RegularPages "Section" "post") }}
+      <div class="columns">
+      <div class="column is-2">
+      <p>{{ .Date.Format "January 2, 2006" }}</p>
+      </div>
+      <div class="column">
+      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+      <p>{{ .Params.subtitle }}</p>
+      </div>
+      </div>
   {{ end }}
 {{ end }}

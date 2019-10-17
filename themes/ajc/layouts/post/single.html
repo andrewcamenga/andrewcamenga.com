@@ -3,6 +3,8 @@
   <p class="subtitle">{{ .Date.Format "January 2, 2006" }}</p>
   {{ .Content }}
   <hr/>
-  {{if .PrevInSection}}<a href="{{.PrevInSection.Permalink}}">Previous</a>{{end}}
-  {{if .NextInSection}}<a href="{{.NextInSection.Permalink}}">Next</a>{{end}}
+  <div class="columns">
+  {{if .PrevInSection}}<div class="column"><a href="{{.PrevInSection.Permalink}}">⇚ Previous: {{ .PrevInSection.Title }}</a></div>{{end}}
+  {{if .NextInSection}}<div class="column"><a href="{{.NextInSection.Permalink}}">Next: {{ .NextInSection.Title }} ⇛</a></div>{{end}}
+  </div>
 {{ end }}

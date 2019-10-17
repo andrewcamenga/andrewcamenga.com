@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Oswald:600|Roboto+Slab:400,700");
+@import url("https://fonts.googleapis.com/css?family=Oswald:300,600|Roboto+Slab:400,700");
 /*! bulma.io v0.7.5 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
@@ -294,7 +294,7 @@ th:not([align]) {
 
 html {
   background-color: white;
-  font-size: 16px;
+  font-size: 18px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   min-width: 300px;
@@ -333,7 +333,7 @@ body {
   color: #4a4a4a;
   font-size: 1em;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 a {
@@ -9143,33 +9143,6 @@ label.panel-block:hover {
 }
 
 @media screen {
-  .navbar-center {
-    display: flex;
-    justify-content: stretch;
-    align-items: stretch;
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-direction: row;
-  }
-
-  .navbar-link, .navbar-item {
-    align-items: center;
-    display: flex;
-    flex-basis: auto;
-    flex-grow: 1;
-    flex-shrink: 0;
-    justify-content: center;
-  }
-
-  .navbar-dropdown .navbar-item {
-    justify-content: left;
-  }
-
-  .wrapper {
-    max-width: 40rem;
-    margin: auto;
-  }
-
   h1,
 h2,
 h3,
@@ -9177,6 +9150,10 @@ h4,
 h5,
 h6 {
     font-family: "Oswald", sans-serif;
+  }
+
+  .wrapper {
+    max-width: 70ch;
   }
 }
 
