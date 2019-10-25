@@ -1,8 +1,13 @@
 {{ define "main" }}
-  {{ range (where .Site.RegularPages "Section" "post") }}
+  {{ $myYear := "" }}
+  {{ range (where .Site.RegularPages "Section" "post").ByDate.Reverse }}
+      {{ if ne (.Date.Format "2006") $myYear }}
+           {{ $myYear := .Date.Format "2006" }}
+            <h2> {{ $myYear }} </h2>
+      {{ end }}
       <div class="columns">
-      <div class="column is-2">
-      <p>{{ .Date.Format "January 2, 2006" }}</p>
+      <div class="column is-3">
+      <h3>{{ .Date.Format "January 2" }}</h3>
       </div>
       <div class="column">
       <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>

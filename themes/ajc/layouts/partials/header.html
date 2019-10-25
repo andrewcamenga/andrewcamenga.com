@@ -11,6 +11,7 @@
 
 <nav class="navbar is-spaced is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
+
     {{ $logo := resources.Get "images/andrewcamenga_logo.png"  }}
     <a class="navbar-item" href="/">
       <img src="{{$logo.Permalink}}" width="112" height="28">
@@ -32,7 +33,7 @@
       <a class="navbar-item" href="/post/">
         Archive
       </a>
-
+<!--
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
           More
@@ -54,8 +55,9 @@
           </a>
         </div>
       </div>
+-->
     </div>
-
+<!--
     <div class="navbar-end">
       <div class="navbar-item">
         <div class="buttons">
@@ -68,5 +70,6 @@
         </div>
       </div>
     </div>
+-->
   </div>
 </nav>
