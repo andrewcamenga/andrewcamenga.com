@@ -1,0 +1,1 @@
+hugo --watch --cleanDestinationDir --buildDrafts --buildExpired --buildFuture --enableGitInfo --forceSyncStatic
