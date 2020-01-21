@@ -1,18 +1,19 @@
 {{ define "main" }}
-  {{ $myYear := "" }}
+  <div class="archive">
+  {{ $prev := 3000 }}
   {{ range (where .Site.RegularPages "Section" "post").ByDate.Reverse }}
-      {{ if ne (.Date.Format "2006") $myYear }}
-           {{ $myYear := .Date.Format "2006" }}
-            <h2> {{ $myYear }} </h2>
-      {{ end }}
-      <div class="columns">
-      <div class="column is-3">
-      <h3>{{ .Date.Format "January 2" }}</h3>
-      </div>
-      <div class="column">
-      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-      <p>{{ .Params.subtitle }}</p>
-      </div>
-      </div>
+  {{ if gt $prev (.Date.Format "2006") }}
+      <h2>{{.Date.Format "2006"}}</h2>
   {{ end }}
+      <div class="columns">
+        <div class="column is-3 is-offset-1">
+          <p>{{ .Date.Format "January 2, 2006" }}</p>
+        </div>
+        <div class="column">
+          <p><a href="{{ .Permalink }}">{{ .Title }}</a></p>
+        </div>
+      </div>
+  {{ $prev = .Date.Format "2006" }}
+  {{ end }}
+  </div>
 {{ end }}

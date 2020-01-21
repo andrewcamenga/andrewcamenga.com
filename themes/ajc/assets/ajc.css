@@ -9356,5 +9356,9 @@ h6 {
     margin: auto;
   }
 }
+.archive .columns .column {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 
 /*# sourceMappingURL=ajc.css.map */
