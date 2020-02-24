@@ -3,7 +3,6 @@ date: 2014-08-01 19:30:00
 slug: choose-to-leave-a-legacy
 title: Choose to Leave a Legacy!
 subtitle: 5 warning signs your legacy won't last ... and what to do about it.
-author: Andrew J. Camenga
 category: sermons
 description: Presented at the Seventh Day Baptist General Conference, St. Paul, MN
 summary: Sermon video and outline presented at the Seventh Day Baptist General Conference, St. Paul, MN. The sermon explores the theme text of the Conference week by thinking about the legacy Moses was calling the people of Israel to build.

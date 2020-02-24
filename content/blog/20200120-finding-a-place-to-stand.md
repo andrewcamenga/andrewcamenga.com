@@ -3,7 +3,6 @@ date: "2020-01-20"
 slug: finding-a-place-to-stand
 title: Finding A Place To Stand
 subtitle: when disagreement lingers, find a place to stand
-authors: ['andrew-camenga']
 draft: true
 summary: "There are times when you need to find a place to stand."
 ---

@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="archive">
+  <table>
+  {{ $pages := where .Site.Pages "Section" "blog"}}
+  {{ $pages := $pages | union ( where .Site.Pages "Section" "working-definition" ) }}
+  {{ $pages := $pages | union ( where .Site.Pages "Section" "sermon" ) }}
+  {{ $pages := $pages | union ( where .Site.Pages "Section" "essay" ) }}
+  {{ $pages := $pages | union ( where .Site.Pages "Section" "note" ) }}
+  {{ range $pages.ByDate.Reverse }}
+  <tr><td>{{.Date.Format "January 2, 2006"}}</td><td class="is-centered">{{.Type}}</td><td><a href="{{ .Permalink }}">{{ .Title }} </a></td></tr>
+  {{ end }}
+  </table>
+</div>
+{{ end }}

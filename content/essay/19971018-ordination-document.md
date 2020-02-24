@@ -3,7 +3,6 @@ date: "1997-10-18"
 slug: ordination-statement
 title: Statement of Belief
 subtitle: An Ordination Council Document
-authors: ['andrew-camenga']
 summary: "My statement of belief prepared for the Ordination Council called by the Adams Center, NY, Seventh Day Baptist Church on October 18, 1997."
 ---
 

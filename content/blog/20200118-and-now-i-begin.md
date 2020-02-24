@@ -3,7 +3,6 @@ date: "2020-01-18"
 slug: and-now-i-begin
 title: And Now I Begin
 subtitle: a decision to begin writing in public
-authors: ['andrew-camenga']
 summary: "Without promise of quality or quantity but with the hope
 that I can eventually learn to write something worth reading …"
 ---

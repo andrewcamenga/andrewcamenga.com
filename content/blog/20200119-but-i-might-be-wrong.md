@@ -3,7 +3,6 @@ date: "2020-01-19"
 slug: but-i-might-be-wrong
 title: But I Might Be Wrong
 subtitle: hesitating to write for public consumption
-authors: ['andrew-camenga']
 summary: "While I don't want to be considered a fool, I can 
 learn from mistakes and change as necessary."
 ---

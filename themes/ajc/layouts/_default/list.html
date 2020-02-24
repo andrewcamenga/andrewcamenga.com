@@ -1,19 +1,10 @@
 {{ define "main" }}
   <div class="archive">
-  {{ $prev := 3000 }}
-  {{ range (where .Site.RegularPages "Section" "post").ByDate.Reverse }}
-  {{ if gt $prev (.Date.Format "2006") }}
-      <h2>{{.Date.Format "2006"}}</h2>
+ <h1>{{.Type}}s</h1>
+  <ul>
+  {{ range .Pages.ByDate.Reverse }}
+      <li><a href="{{ .Permalink }}">{{.Date.Format "2006-01-02"}} {{ .Title }} </a></li>
   {{ end }}
-      <div class="columns">
-        <div class="column is-3 is-offset-1">
-          <p>{{ .Date.Format "January 2, 2006" }}</p>
-        </div>
-        <div class="column">
-          <p><a href="{{ .Permalink }}">{{ .Title }}</a></p>
-        </div>
-      </div>
-  {{ $prev = .Date.Format "2006" }}
-  {{ end }}
+  </ul>
   </div>
 {{ end }}

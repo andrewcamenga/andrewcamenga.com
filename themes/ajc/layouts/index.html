@@ -1,10 +1,10 @@
 {{ define "main" }}
-  {{ range first 1 (where .Site.RegularPages "Section" "post") }}
+  {{ range first 1 (where .Site.RegularPages "Section" "blog") }}
       <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
       {{ .Content }}
       {{ if .PrevInSection }}
       <h2><a class="has-text-grey-dark" href="{{ .PrevInSection.Permalink }}">⇚ Previous Article: {{ .PrevInSection.Title }}</a></h2>
       {{ end }}
-      <h2><a class="has-text-grey-dark" href="/post/">⇛ List of All Articles ⇚</a></h2>
+      <h2><a class="has-text-grey-dark" href="/archives/">⇛ See Full List ⇚</a></h2>
   {{ end }}
 {{ end }}
