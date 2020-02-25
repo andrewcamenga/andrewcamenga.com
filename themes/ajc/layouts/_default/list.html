@@ -1,10 +1,20 @@
 {{ define "main" }}
   <div class="archive">
- <h1>{{.Type}}s</h1>
-  <ul>
+  <h1 class="title has-text-centered">Archive of {{.Type | title}} posts</h1>
+  {{ $prev := 3000 }}
+  <table>
   {{ range .Pages.ByDate.Reverse }}
-      <li><a href="{{ .Permalink }}">{{.Date.Format "2006-01-02"}} {{ .Title }} </a></li>
+    {{ if gt $prev (.Date.Format "2006") }}
+      <tr><td colspan=2>
+        <p class="is-size-3 has-text-weight-semibold has-text-centered">{{.Date.Format "2006"}}</p>
+      </td></tr>
+    {{ end }}
+    <tr>
+      <td>{{ .Date.Format "January 2, 2006" }}</td>
+      <td><a href="{{ .Permalink }}">{{ .Title }}</a></td>
+    </tr>
+    {{ $prev = .Date.Format "2006" }}
   {{ end }}
-  </ul>
+  </table>
   </div>
 {{ end }}

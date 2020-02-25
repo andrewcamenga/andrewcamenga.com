@@ -1,5 +1,9 @@
 {{ define "main" }}
   <div class="archive">
+    <h1 class="title has-text-centered">Working Definitions</h1>
+    <p class="subtitle has-text-centered">working to distill what I mean<br/>
+    <span class="is-size-6 has-text-grey">Always subject to revision.</span></p>
+    <p class="is-size-6 is-italic has-text-grey">These definitions represent what I want to mean when I'm using the terms.Following a short-ish definition, there may be more reflection, but that will usually be reserved for other types of posts (blog posts, essays, notes, and sermons).</p>
 <!-- create a list with all uppercase letters -->
 {{ $letters := split "ABCDEFGHIJKLMNOPQRSTUVWXYZ" "" }}
 
@@ -19,7 +23,7 @@
       <h3>{{ $firstChar }}</h3>
     {{ end }}
 
-   -- <a href="{{ .Permalink }}">{{ .Title }}</a><br>
+   <a href="{{ .Permalink }}">{{ .Title }}</a><br>
   {{ end }}
 {{ end }} 
 

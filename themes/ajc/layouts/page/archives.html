@@ -1,13 +1,26 @@
 {{ define "main" }}
 <div class="archive">
+<h1 class="title has-text-centered">Archive of Everything</h1>
+<p class="subtitle has-text-centered">Blogs, Definitions, Essays, Notes, and Sermons <br/> <span class="has-text-grey is-size-6">intermixed and arranged by date</span></p>
   <table>
   {{ $pages := where .Site.Pages "Section" "blog"}}
   {{ $pages := $pages | union ( where .Site.Pages "Section" "working-definition" ) }}
   {{ $pages := $pages | union ( where .Site.Pages "Section" "sermon" ) }}
   {{ $pages := $pages | union ( where .Site.Pages "Section" "essay" ) }}
   {{ $pages := $pages | union ( where .Site.Pages "Section" "note" ) }}
+  {{ $prev := 3000 }}
   {{ range $pages.ByDate.Reverse }}
-  <tr><td>{{.Date.Format "January 2, 2006"}}</td><td class="is-centered">{{.Type}}</td><td><a href="{{ .Permalink }}">{{ .Title }} </a></td></tr>
+    {{ if ne .Kind "section" }}
+      {{ if gt $prev (.Date.Format "2006") }}
+          <tr><td colspan=3><p class="is-size-3 has-text-weight-semibold has-text-centered">{{.Date.Format "2006"}}</p></td></tr>
+      {{ end }}
+      <tr>
+        <td>{{.Date.Format "January 2, 2006"}}</td>
+        <td class="is-centered">{{.Type}}</td>
+        <td><a href="{{ .Permalink }}">{{ .Title }} </a></td>
+      </tr>
+      {{ $prev = .Date.Format "2006" }}
+    {{ end }}
   {{ end }}
   </table>
 </div>
