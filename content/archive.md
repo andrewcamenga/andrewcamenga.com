@@ -1,5 +1,5 @@
 ﻿---
 date: "2020-02-24"
-layout: "archives"
+layout: "archive"
 title: "everything"
 ---
