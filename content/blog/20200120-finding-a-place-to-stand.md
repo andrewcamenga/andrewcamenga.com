@@ -4,7 +4,7 @@ slug: finding-a-place-to-stand
 title: Finding A Place To Stand
 subtitle: when disagreement lingers, find a place to stand
 draft: true
-summary: "There are times when you need to find a place to stand."
+summary: "There are times when you need to find a place to stand." 
 ---
 
 Thoughtful, reasonable people often disagree and their disagreement is expressed with passion, wit, and eloquence. In many cases, even after listening with care to each other and deeply considering the other's position, the people remain in disagreement.
@@ -15,7 +15,7 @@ I don't like that reality. I'd much rather have a reality where the guaranteed r
 
 But, whether by necessity or not, attempts to find or craft agreement fail. When resolution isn't possible, what is left?
 
-If there are no practical consequences, all that is necessarily left is noting the tension and letting things ride.
+If there are no practical consequences, {{< sidenote note="can you **see** me?" >}} all that is necessarily left is noting the tension and letting things ride.
 
 But, when there are practical consequences, what is left is choosing a place to stand.
 

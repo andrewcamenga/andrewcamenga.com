@@ -9353,12 +9353,26 @@ h6 {
 
   .wrapper {
     max-width: 70ch;
-    margin: auto;
   }
 }
 .archive .columns .column {
   padding-top: 0;
   padding-bottom: 0;
+}
+
+input[type=checkbox] ~ span {
+  display: none;
+}
+
+input[type=checkbox]:checked ~ span {
+  display: block;
+  font-family: "Lato";
+  margin: 0.5em;
+  background: #dddddd;
+}
+
+input[type=checkbox] {
+  display: none;
 }
 
 /*# sourceMappingURL=ajc.css.map */
