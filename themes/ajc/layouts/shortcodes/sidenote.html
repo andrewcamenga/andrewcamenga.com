@@ -1,2 +1,3 @@
-{{ $note := .Get "note" }}
-  <input type="checkbox" id="cb1" /><label for="cb1"><sup>1</sup></label><span>{{$note}}</span>
+{{.Page.Scratch.Add "footnote" 1}}
+{{ $x := .Page.Scratch.Get "footnote"}}
+  <input type="checkbox" id="cb{{$x}}" /><label for="cb{{$x}}"><sup>{{$x}}</sup></label><span>{{ .Inner | markdownify }}</span>
