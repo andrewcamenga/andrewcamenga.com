@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Lato|Roboto+Slab");
-/*! bulma.io v0.8.0 | MIT License | github.com/jgthms/bulma */
+/*! bulma.io v0.8.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
     transform: rotate(0deg);
@@ -2946,25 +2946,49 @@ a.box:active {
   background-color: #00d1b2;
   color: #fff;
 }
+.notification.is-primary.is-light {
+  background-color: #ebfffc;
+  color: #00947e;
+}
 .notification.is-link {
   background-color: #3273dc;
   color: #fff;
+}
+.notification.is-link.is-light {
+  background-color: #eef3fc;
+  color: #2160c4;
 }
 .notification.is-info {
   background-color: #3298dc;
   color: #fff;
 }
+.notification.is-info.is-light {
+  background-color: #eef6fc;
+  color: #1d72aa;
+}
 .notification.is-success {
   background-color: #48c774;
   color: #fff;
+}
+.notification.is-success.is-light {
+  background-color: #effaf3;
+  color: #257942;
 }
 .notification.is-warning {
   background-color: #ffdd57;
   color: rgba(0, 0, 0, 0.7);
 }
+.notification.is-warning.is-light {
+  background-color: #fffbeb;
+  color: #947600;
+}
 .notification.is-danger {
   background-color: #f14668;
   color: #fff;
+}
+.notification.is-danger.is-light {
+  background-color: #feecf0;
+  color: #cc0f35;
 }
 
 .progress {
@@ -6075,7 +6099,6 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 }
 
 .navbar-item {
-  display: block;
   flex-grow: 0;
   flex-shrink: 0;
 }
@@ -6244,9 +6267,6 @@ body.has-navbar-fixed-bottom-touch {
     display: flex;
   }
 
-  .navbar-item {
-    display: flex;
-  }
   .navbar-item.has-dropdown {
     align-items: stretch;
   }
@@ -9241,19 +9261,16 @@ label.panel-block:hover {
   }
 }
 .hero.is-small .hero-body {
-  padding-bottom: 1.5rem;
-  padding-top: 1.5rem;
+  padding: 1.5rem;
 }
 @media screen and (min-width: 769px), print {
   .hero.is-medium .hero-body {
-    padding-bottom: 9rem;
-    padding-top: 9rem;
+    padding: 9rem 1.5rem;
   }
 }
 @media screen and (min-width: 769px), print {
   .hero.is-large .hero-body {
-    padding-bottom: 18rem;
-    padding-top: 18rem;
+    padding: 18rem 1.5rem;
   }
 }
 .hero.is-halfheight .hero-body, .hero.is-fullheight .hero-body, .hero.is-fullheight-with-navbar .hero-body {
