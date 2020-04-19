@@ -1,6 +1,6 @@
 ﻿---
-date: "2019-06-10"
-lastmod: "2019-10-12"
+date: "2020-04-19"
+lastmod: "2020-04-19"
 slug: worry
 title: "Worry"
 ---
