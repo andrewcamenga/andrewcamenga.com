@@ -1,3 +1,12 @@
+{{ if gt (.Page.Scratch.Get "footnote") 0 }}
+<div id="footnotedisplay">
+    <ul>
+    {{ range $key,$footnote := .Page.Scratch.Get "footnotes" }}
+      <li id="fn{{$key}}-note">{{$footnote}}<a href="#fn{{$key}}">return</a></li>
+    {{ end }}
+    </ul>
+{{ end }}
+</div>
 <div class="footer has-text-centered">
 <p>
 <a href="\">home</a> |
