@@ -39,27 +39,29 @@ function getFootnoteContent(index) {
 };
 
 function footnoteEnhancer() {
-  const footnoteSups = document.querySelectorAll("sup[id^='fnref:']");
-  footnoteSups.forEach(function(fnref) {
-    const footnoteID = fnref.id.substring(6);
-    /*const anchor = fnref.querySelector(".footnote-ref");
-    anchor.innerHTML = "x";*/
-    const newDiv = document.createElement("div");
-    newDiv.innerHTML = getFootnoteContent(footnoteID);
-    newDiv.classList.add("inlinefootnote","is-hidden");
-    newDiv.id = "divid-"+footnoteID;
-    const backRef = newDiv.querySelector(".footnote-backref");
-    backRef.remove();
-    insertAfter(fnref,newDiv);
-    newDiv.addEventListener("click", function(event) {
-      toggleVisible(this);
-    })
-    fnref.addEventListener("click", function(event) {
-      event.preventDefault();
-      toggleVisible(newDiv);
-    })
-  })
-  document.querySelector(".footnotes").classList.add("is-hidden");
+  if ( document.querySelector(".footnotes") !== null ) {
+	  const footnoteSups = document.querySelectorAll("sup[id^='fnref:']");
+	  footnoteSups.forEach(function(fnref) {
+	    const footnoteID = fnref.id.substring(6);
+	    /*const anchor = fnref.querySelector(".footnote-ref");
+	    anchor.innerHTML = "x";*/
+	    const newDiv = document.createElement("div");
+	    newDiv.innerHTML = getFootnoteContent(footnoteID);
+	    newDiv.classList.add("inlinefootnote","is-hidden");
+	    newDiv.id = "divid-"+footnoteID;
+	    const backRef = newDiv.querySelector(".footnote-backref");
+	    backRef.remove();
+	    insertAfter(fnref,newDiv);
+	    newDiv.addEventListener("click", function(event) {
+	      toggleVisible(this);
+	    })
+	    fnref.addEventListener("click", function(event) {
+	      event.preventDefault();
+	      toggleVisible(newDiv);
+	    })
+	  })
+	  document.querySelector(".footnotes").classList.add("is-hidden");
+  }
 }
 
 footnoteEnhancer();
