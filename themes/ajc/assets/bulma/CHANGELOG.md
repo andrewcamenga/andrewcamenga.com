@@ -1,7 +1,5 @@
 # Bulma Changelog
 
-<<<<<<< HEAD
-=======
 ## 0.9.0
 
 ### RTL support
@@ -71,7 +69,6 @@ This release also includes the following helpers:
 
 * #2955 Fix issue when there's only one `is-toggle` tag
 
->>>>>>> origin/master
 ## 0.8.2
 
 ### Bug fixes

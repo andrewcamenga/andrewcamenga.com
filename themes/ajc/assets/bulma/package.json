@@ -1,49 +1,27 @@
 {
-<<<<<<< HEAD
-  "_from": "bulma@0.8.2",
-  "_id": "bulma@0.8.2",
-  "_inBundle": false,
-  "_integrity": "sha512-vMM/ijYSxX+Sm+nD7Lmc1UgWDy2JcL2nTKqwgEqXuOMU+IGALbXd5MLt/BcjBAPLIx36TtzhzBcSnOP974gcqA==",
-=======
   "_from": "bulma@0.9.0",
   "_id": "bulma@0.9.0",
   "_inBundle": false,
   "_integrity": "sha512-rV75CJkubNUroAt0qCRkjznZLoaXq/ctfMXsMvKSL84UetbSyx5REl96e8GoQ04G4Tkw0XF3STECffTOQrbzOQ==",
->>>>>>> origin/master
   "_location": "/bulma",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-<<<<<<< HEAD
-    "raw": "bulma@0.8.2",
-    "name": "bulma",
-    "escapedName": "bulma",
-    "rawSpec": "0.8.2",
-    "saveSpec": null,
-    "fetchSpec": "0.8.2"
-=======
     "raw": "bulma@0.9.0",
     "name": "bulma",
     "escapedName": "bulma",
     "rawSpec": "0.9.0",
     "saveSpec": null,
     "fetchSpec": "0.9.0"
->>>>>>> origin/master
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-<<<<<<< HEAD
-  "_resolved": "https://registry.npmjs.org/bulma/-/bulma-0.8.2.tgz",
-  "_shasum": "5d928f16ed4a84549c2873f95c92c38c69c631a7",
-  "_spec": "bulma@0.8.2",
-=======
   "_resolved": "https://registry.npmjs.org/bulma/-/bulma-0.9.0.tgz",
   "_shasum": "948c5445a49e9d7546f0826cb3820d17178a814f",
   "_spec": "bulma@0.9.0",
->>>>>>> origin/master
   "_where": "/Users/jthomas/Desktop",
   "author": {
     "name": "Jeremy Thomas",
@@ -57,17 +35,10 @@
   "deprecated": false,
   "description": "Modern CSS framework based on Flexbox",
   "devDependencies": {
-<<<<<<< HEAD
-    "autoprefixer": "^9.7.6",
-    "clean-css-cli": "^4.3.0",
-    "node-sass": "^4.13.1",
-    "postcss-cli": "^7.1.0",
-=======
     "autoprefixer": "^9.8.0",
     "clean-css-cli": "^4.3.0",
     "node-sass": "^4.14.1",
     "postcss-cli": "^7.1.1",
->>>>>>> origin/master
     "rimraf": "^3.0.2"
   },
   "files": [
@@ -107,9 +78,5 @@
   },
   "style": "bulma/css/bulma.min.css",
   "unpkg": "css/bulma.css",
-<<<<<<< HEAD
-  "version": "0.8.2"
-=======
   "version": "0.9.0"
->>>>>>> origin/master
 }
