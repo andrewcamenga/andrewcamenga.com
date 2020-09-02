@@ -1,6 +1,0 @@
-{{.Page.Scratch.Add "footnote" 1}}
-{{ $x := .Page.Scratch.Get "footnote"}}
-{{ $xs := string $x }}
-{{ $y := .Inner | markdownify }}
-{{.Page.Scratch.SetInMap "footnotes" $xs $y}}
-<input type="checkbox" id="cb{{$x}}" /><label for="cb{{$x}}"><sup>{{$x}}</sup></label><span>{{$y}}</span>
