@@ -16,8 +16,8 @@
       {{ end }}
       <tr>
         <td>{{.Date.Format "January 2"}}</td>
-        <td class="is-centered">{{.Type}}</td>
-        <td><a href="{{ .Permalink }}">{{ .Title }} </a></td>
+        <td><a href="{{ .Permalink }}">{{ if eq .Type "note"}}{{ .Date.Format "2006-01-02 15:04:05" }}{{else}}{{ .Title }}{{end}} </a></td>
+        <td class="is-right">{{.Type}}</td>
       </tr>
       {{ $prev = .Date.Format "2006" }}
     {{ end }}

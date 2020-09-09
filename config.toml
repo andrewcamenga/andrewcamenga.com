@@ -7,3 +7,7 @@ languageCode = "en-us"
 removePathAccents = true
 
 theme = "ajc"
+
+[permalinks]
+    note = "/note/:20060102-:150406"
+

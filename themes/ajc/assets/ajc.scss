@@ -21,6 +21,7 @@ $body-size: 18px;
 }
 
 .archive .columns .column {padding-top:0; padding-bottom:0;}
+.has-no-bullets {list-style-type: none;}
 
 input[type=checkbox] ~ span {display:none;}
 input[type=checkbox]:checked ~ span {display:block; font-family: "Lato"; margin:.5em; background:#dddddd;}

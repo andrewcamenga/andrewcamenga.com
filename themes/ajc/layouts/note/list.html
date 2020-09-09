@@ -6,13 +6,13 @@
   <ul>
   {{ range .Pages.ByDate.Reverse }}
     {{ if gt $prev (.Date.Format "2006") }}
-    <li class="is-size-3 has-text-weight-semibold has-text-centered">{{.Date.Format "2006"}}</li>
+    <li class="has-no-bullets is-size-3 has-text-weight-semibold has-text-centered">{{.Date.Format "2006"}}</li>
     {{ end }}
-    <li><a href="{{ .Permalink }}"></a>{{ .Date.Format "January 2, 2006" }}</a>
-        <ul><li>
+    <li>{{ .Date.Format "January 2, 2006" }}</a></li>
+        <ul><li class="has-no-bullets">
+            <p><a href="{{ .Permalink }}">{{ .Date.Format "15:04:05" }}</a></p>
             {{ .Content }}
         </li></ul>
-    </li>
   {{ $prev = .Date.Format "2006" }}
   {{ end }}
   </ul>

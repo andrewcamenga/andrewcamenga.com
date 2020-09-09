@@ -1,0 +1,12 @@
+{{ define "main" }}
+<p>See <a href="/note">the list of all notes.</a></p>
+<article class="message is-dark">
+  <div class="message-header">
+    <p>{{ .Date.Format "September 1, 2020 15:04:05" }}</p>
+  </div>
+  <div class="message-body">
+    {{ .Content }}
+  </div>
+</article>
+<p class="is-bold"><a href="{{ .Permalink }}">Permalink to this note.</a></p>
+{{ end }}
