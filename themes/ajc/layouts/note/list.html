@@ -1,20 +1,23 @@
 {{ define "main" }}
   <div class="archive">
   <h1 class="title has-text-centered">List of {{.Type | title}} posts</h1>
-  {{ $prev := 3000 }}
-  
-  <ul>
-  {{ range .Pages.ByDate.Reverse }}
-    {{ if gt $prev (.Date.Format "2006") }}
-    <li class="has-no-bullets is-size-3 has-text-weight-semibold has-text-centered">{{.Date.Format "2006"}}</li>
-    {{ end }}
-    <li>{{ .Date.Format "January 2, 2006" }}</a></li>
-        <ul><li class="has-no-bullets">
-            <p><a href="{{ .Permalink }}">{{ .Date.Format "15:04:05" }}</a></p>
-            {{ .Content }}
-        </li></ul>
-  {{ $prev = .Date.Format "2006" }}
+  {{ range .Pages.GroupByDate "2006" "desc" }}
+      <div><p style="position:sticky; top:60px;">{{ .Key }}</p>
+      {{ range .Pages.GroupByDate "October" "desc" }}
+          <div><p style="position:sticky; top:80px;">{{ .Key }}</p>
+          {{ range .Pages.GroupByDate "02" "desc" }}
+              <div style="margin-left:2em;"><p style="position:sticky; top:100px;">{{ .Key }}</p>
+              {{ range .Pages.ByTitle }}
+              <div style="margin-left:4em;" class="box">
+              <p><a href="{{ .Permalink }}">{{ .Date.Format "15:04:05" }}</a></p>
+              {{ .Content }}
+              </div>
+              {{ end }}
+              </div>
+          {{ end }}
+          </div>
+      {{ end }}
+      </div>
   {{ end }}
-  </ul>
   </div>
 {{ end }}

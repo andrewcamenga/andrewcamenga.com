@@ -1,7 +1,13 @@
 {{ define "main" }}
 <div class="archive">
 <h1 class="title has-text-centered">Archive of Everything</h1>
-<p class="subtitle has-text-centered">Blogs, Definitions, Essays, Notes, and Sermons <br/> <span class="has-text-grey is-size-6">intermixed and arranged by date</span></p>
+<p class="subtitle has-text-centered">
+    <a href="/blog">Blog Posts</a> |
+    <a href="/working-definition">Definitions</a> |
+    <a href="/essay">Essays</a> |
+    <a href="/note">Notes</a> |
+    <a href="/sermon">Sermons</a><br/>
+    <span class="has-text-grey is-size-6">intermixed and arranged by date</span></p>
   <table>
   {{ $pages := where .Site.Pages "Section" "blog"}}
   {{ $pages := $pages | union ( where .Site.Pages "Section" "working-definition" ) }}

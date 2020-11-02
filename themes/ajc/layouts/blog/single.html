@@ -4,7 +4,7 @@
   {{ .Content }}
   <hr/>
   <div class="columns">
-  {{if .PrevInSection}}<div class="column"><a href="{{.PrevInSection.Permalink}}">⇚ Previous: {{ .PrevInSection.Title }}</a></div>{{end}}
-  {{if .NextInSection}}<div class="column"><a href="{{.NextInSection.Permalink}}">Next: {{ .NextInSection.Title }} ⇛</a></div>{{end}}
+  {{if .PrevInSection}}<div class="column"><div class="box"><a href="{{.PrevInSection.Permalink}}">Previous:</br>{{ .PrevInSection.Title }}</a></div></div>{{end}}
+  {{if .NextInSection}}<div class="column"><div class="box"><a href="{{.NextInSection.Permalink}}">Next:</br>{{ .NextInSection.Title }}</a></div></div>{{end}}
   </div>
 {{ end }}
