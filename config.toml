@@ -9,5 +9,4 @@ removePathAccents = true
 theme = "ajc"
 
 [permalinks]
-    note = "/note/:20060102-:150406"
-
+note = "/note/:20060102-:150406"

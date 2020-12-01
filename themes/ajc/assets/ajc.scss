@@ -20,6 +20,8 @@ $body-size: 18px;
     .wrapper { max-width:70ch;}
 }
 
+@import "ajc-archive-list";
+
 .archive .columns .column {padding-top:0; padding-bottom:0;}
 .has-no-bullets {list-style-type: none;}
 

@@ -1,23 +1,36 @@
 {{ define "main" }}
-  <div class="archive">
+<div class="archive">
   <h1 class="title has-text-centered">List of {{.Type | title}} posts</h1>
-  {{ range .Pages.GroupByDate "2006" "desc" }}
-      <div><p style="position:sticky; top:60px;">{{ .Key }}</p>
-      {{ range .Pages.GroupByDate "October" "desc" }}
-          <div><p style="position:sticky; top:80px;">{{ .Key }}</p>
+    <ul class="archive-list">
+    {{ range .Pages.GroupByDate "2006" "desc" }}
+      <li class="year">
+        <div class="year-info">
+        <h2 class="year-title date">{{ .Key }}</h2>
+        </div>
+        <ul class="year-items">
+        {{ range .Pages.GroupByDate "Oct" "desc" }}
+          <li class="month">
+          <h3 class="month-title date"><span class="month-sticky">{{ .Key }}</span></h3>
+          <ul class="month-items">
           {{ range .Pages.GroupByDate "02" "desc" }}
-              <div style="margin-left:2em;"><p style="position:sticky; top:100px;">{{ .Key }}</p>
-              {{ range .Pages.ByTitle }}
-              <div style="margin-left:4em;" class="box">
-              <p><a href="{{ .Permalink }}">{{ .Date.Format "15:04:05" }}</a></p>
-              {{ .Content }}
-              </div>
-              {{ end }}
-              </div>
-          {{ end }}
-          </div>
+            <li class="day">
+              <h4 class="day-title date"><span class="day-sticky">{{ .Key }}</span></h4>
+            <ul class="day-items">
+            {{ range .Pages.ByTitle }}
+              <li class="item">
+                <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Date.Format "15:04:05" }}</a></h5>
+                {{ .Content }}
+              </li>
+            {{ end }}
+            </ul>
+            </li>
+        {{ end }}
+        </ul>
+        </li>
       {{ end }}
-      </div>
-  {{ end }}
-  </div>
+      </ul>
+      </li>
+    {{ end }}
+    </ul>
+</div>
 {{ end }}

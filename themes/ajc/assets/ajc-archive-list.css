@@ -1,0 +1,202 @@
+.archive-list {
+    width: 100%;
+    margin: 3.12901em auto
+}
+
+ul.archive-list,
+.archive-list ul {
+    list-style:none !important;
+    margin-left:0em;
+    margin-top:0em !important;
+    }
+
+
+.archive-list .date {
+    font-size: .96117em;
+    line-height: 1.155;
+}
+
+.archive-list .year {
+    position: relative
+}
+
+.archive-list .year:not(:last-child) {
+    margin-bottom: 4em
+}
+
+.archive-list .year-info {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template: ". year ." auto/minmax(7rem, 1fr) minmax(min-content, 32rem) minmax(7rem, 1fr);
+    position: sticky;
+    top: 60px;
+    padding-top: 0.5em
+}
+
+.archive-list .year-title {
+    grid-area: year;
+    display: block;
+    font-weight: bold;
+    line-height: 1;
+    font-size: 1.05em;
+}
+
+.archive-list .year-title::after {
+    content: '';
+    display: block;
+    width: 1em;
+    height: 0;
+    margin-bottom: .75188em;
+    padding-bottom: calc(.75188em - 2px);
+    border-bottom: 2px solid hsl(222, 10%, 70%);
+}
+
+.archive-list .month {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3.00752em;
+    list-style-type: none;
+    display: grid;
+    grid-template: "title entries ." auto/1fr minmax(min-content, 36rem) 1fr;
+    gap: 0 1rem;
+    justify-content: stretch;
+    justify-items: stretch
+}
+
+.archive-list .month:last-child {
+    margin-bottom: 0
+}
+
+.archive-list .month-sticky {
+    position: sticky;
+    top: calc(60px + 3.25em);
+}
+
+.archive-list .month-title {
+    grid-area: title;
+    justify-self: end;
+    text-align: right;
+    display: inline-block;
+    text-align: right;
+    letter-spacing: 1px;
+    width: 4rem
+}
+
+.archive-list .month-items {
+    grid-area: entries
+}
+
+.archive-list .day {
+    display: grid;
+    grid-template: "day entries" auto/1rem minmax(8em, 1fr);
+    gap: 0 1rem;
+    margin: 0 0 1.27836em;
+    width: 100%;
+    position: relative
+}
+
+.archive-list .day:last-child {
+    margin: 0
+}
+
+.archive-list .day-title {
+    grid-area: day
+}
+
+.archive-list .day-sticky {
+    position: sticky;
+    top: calc(60px + 3.2em);
+}
+
+.archive-list .year-title,
+.archive-list .month-title,
+.archive-list .day-title {
+    color: hsl(222, 10%, 35%);
+}
+
+.archive-list .day-items {
+    grid-area: entries
+}
+
+.archive-list .item {
+    margin: 0 0 1.27836em;
+    width: 100%
+}
+
+.archive-list .item:last-child {
+    margin-bottom: 0
+}
+
+.archive-list .item-title {
+    font-weight: 400;
+    margin-bottom: .31959em;
+    position: relative;
+    background-color: hsl(240, 100%, 98%);
+}
+
+.archive-list .item-title__text {
+    size: 1.05em;
+}
+
+.archive-list .item-title__date {
+    font-size: .96117em
+}
+
+.archive-list .item-title__collection {
+    font-weight: 300;
+    font-size: .96117em;
+    letter-spacing: 0.5pt
+}
+
+.archive-list .item-permalink {
+    -moz-text-decoration-color: transparent;
+    text-decoration-color: transparent;
+}
+
+.archive-list .item-permalink:hover,
+.archive-list .item-permalink:active {
+    -moz-text-decoration-color:  hsl(208, 85%, 45%);
+    text-decoration-color:  hsl(208, 85%, 45%);
+}
+
+.archive-list .item-content {
+    margin-top: -0.2em;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: .96117em;
+    line-height: 1.375;
+    max-width: 32em
+}
+
+.archive-list .item-subtitle {
+    line-height: 1.1;
+    font-size: .96117em;
+    font-style: italic;
+    color: hsl(222, 10%, 35%);
+}
+
+.archive-list .item-subtitle em {
+    font-style: normal
+}
+
+.for-callout+.archive-list {
+    margin-top: 1.27836em
+}
+
+@media screen and (max-width: 768px) {
+    .archive-list .year-info {
+        grid-template-columns: minmax(4rem, 1fr) minmax(min-content, 30rem) minmax(4rem, 1fr)
+    }
+    .archive-list .month {
+        gap: 0.5rem;
+        grid-template-columns: 1fr minmax(min-content, 34rem) 1fr
+    }
+    .archive-list .month-title {
+        width: 2rem
+    }
+    .archive-list .day {
+        gap: 0 0.5rem
+    }
+}
