@@ -1,4 +1,7 @@
 {{ define "main" }}
+<div class="section">
+  <div class="content grid">
+
   <h1 class="title">{{ .Title }}&nbsp;<span class="has-text-weight-light has-text-grey is-size-6">a working definition</span></h1>
   <p class="subtitle has-text-weight-light is-size-7 has-text-grey-light">{{ .Date.Format "January 2, 2006" }}{{if ne .Date .Lastmod}}&nbsp;<span class="is-italic is-size-7">updated: {{.Lastmod.Format "January 2, 2006" }}</span>{{ end }}</p>
   <div class="box">
@@ -9,4 +12,6 @@
   {{if .PrevInSection}}<div class="column"><a href="{{.PrevInSection.Permalink}}">⇚ {{ .PrevInSection.Title }}</a></div>{{end}}
   {{if .NextInSection}}<div class="column"><a href="{{.NextInSection.Permalink}}">{{ .NextInSection.Title }} ⇛</a></div>{{end}}
   </div>
+  </div>
+</div>
 {{ end }}

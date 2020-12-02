@@ -1,71 +1,69 @@
 {{ define "main" }}
-<div class="archive">
-
-<h1 class="title has-text-centered">List of Everything</h1>
-<p class="subtitle has-text-centered">(“The Archive”)</p>
-<p class="subtitle has-text-centered">
-    <a href="/journal">Journal</a> |
-    <a href="/working-definition">Definitions</a> |
-    <a href="/essay">Essays</a> |
-    <a href="/note">Notes</a> |
-    <a href="/sermon">Sermons</a><br/>
-    <span class="has-text-grey is-size-6">intermixed and arranged by date</span></p>
-  {{ $pages := where .Site.Pages "Section" "journal"}}
-  {{ $pages := $pages | union ( where .Site.Pages "Section" "working-definition" ) }}
-  {{ $pages := $pages | union ( where .Site.Pages "Section" "sermon" ) }}
-  {{ $pages := $pages | union ( where .Site.Pages "Section" "essay" ) }}
-  {{ $pages := $pages | union ( where .Site.Pages "Section" "note" ) }}
-
-    <ul class="archive-list">
-    {{ range $pages.GroupByDate "2006" "desc" }}
-      <li class="year">
-        <div class="year-info">
-        <h2 class="year-title date">{{ .Key }}</h2>
-        </div>
-        <ul class="year-items">
-        {{ range .Pages.GroupByDate "Jan" "desc" }}
-          <li class="month">
-          <h3 class="month-title date"><span class="month-sticky">{{ .Key }}</span></h3>
-          <ul class="month-items">
-          {{ range .Pages.GroupByDate "02" "desc" }}
-            <li class="day">
-              <h4 class="day-title date"><span class="day-sticky">{{ .Key }}</span></h4>
-            <ul class="day-items">
-            {{ range .Pages.ByTitle }}
-            {{ if ne .Kind "section" }}
-              <li class="item">
-                {{ if eq .Type "note"}}
-                  <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Date.Format "15:04" }}</a>&#x2009;&#x2014;&#x2009;<a href="/note">Notes</a></h5>
-                  {{ .Content }}
-                {{ else if eq .Type "journal" }}
-                  <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Title }}</a>&#x2009;&#x2014;&#x2009;<a href="/journal">Journal</a></h5>
-                  <p class="item-subtitle">{{ .Params.subtitle }}</p>
-                {{ else if eq .Type "working-definition" }}
-                  <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Title }}</a>&#x2009;&#x2014;&#x2009;<a href="/working-definition">Definitions</a></h5>
-                {{ else if eq .Type "sermon" }}
-                  <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Title }}</a>&#x2009;&#x2014;&#x2009;<a href="/sermon">Sermons</a></h5>
-                  <p class="item-subtitle">{{ .Params.subtitle }}</p>
-                {{ else if eq .Type "essay" }}
-                  <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Title }}</a>&#x2009;&#x2014;&#x2009;<a href="/essay">Essays</a></h5>
-                  <p class="item-subtitle">{{ .Params.subtitle }}</p>
-                {{ else }}
-                  <h5 class="item-title"><a href="{{ .Permalink}}">{{.Title}}</a>&#x2009;&#x2014;&#x2009;Miscellaneous</h5>
+<div class="section">
+  <div class="content grid">
+    <h1 class="title has-text-centered">List of Everything</h1>
+    <p class="subtitle has-text-centered">(“The Archive”)</p>
+    <p class="subtitle has-text-centered">
+        <a href="/journal">Journal</a> |
+        <a href="/working-definition">Definitions</a> |
+        <a href="/essay">Essays</a> |
+        <a href="/note">Notes</a> |
+        <a href="/sermon">Sermons</a><br/>
+        <span class="has-text-grey is-size-6">intermixed and arranged by date</span></p>
+      {{ $pages := where .Site.Pages "Section" "journal"}}
+      {{ $pages := $pages | union ( where .Site.Pages "Section" "working-definition" ) }}
+      {{ $pages := $pages | union ( where .Site.Pages "Section" "sermon" ) }}
+      {{ $pages := $pages | union ( where .Site.Pages "Section" "essay" ) }}
+      {{ $pages := $pages | union ( where .Site.Pages "Section" "note" ) }}
+    
+        <ul class="archive-list">
+        {{ range $pages.GroupByDate "2006" "desc" }}
+          <li class="year">
+            <div class="year-info">
+            <h2 class="year-title date">{{ .Key }}</h2>
+            </div>
+            <ul class="year-items">
+            {{ range .Pages.GroupByDate "Jan" "desc" }}
+              <li class="month">
+              <h3 class="month-title date"><span class="month-sticky">{{ .Key }}</span></h3>
+              <ul class="month-items">
+              {{ range .Pages.GroupByDate "02" "desc" }}
+                <li class="day">
+                  <h4 class="day-title date"><span class="day-sticky">{{ .Key }}</span></h4>
+                <ul class="day-items">
+                {{ range .Pages.ByTitle }}
+                {{ if ne .Kind "section" }}
+                  <li class="item">
+                    {{ if eq .Type "note"}}
+                      <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Date.Format "15:04" }}</a>&#x2009;&#x2014;&#x2009;<a href="/note">Notes</a></h5>
+                      {{ .Content }}
+                    {{ else if eq .Type "journal" }}
+                      <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Title }}</a>&#x2009;&#x2014;&#x2009;<a href="/journal">Journal</a></h5>
+                      <p class="item-subtitle">{{ .Params.subtitle }}</p>
+                    {{ else if eq .Type "working-definition" }}
+                      <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Title }}</a>&#x2009;&#x2014;&#x2009;<a href="/working-definition">Definitions</a></h5>
+                    {{ else if eq .Type "sermon" }}
+                      <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Title }}</a>&#x2009;&#x2014;&#x2009;<a href="/sermon">Sermons</a></h5>
+                      <p class="item-subtitle">{{ .Params.subtitle }}</p>
+                    {{ else if eq .Type "essay" }}
+                      <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Title }}</a>&#x2009;&#x2014;&#x2009;<a href="/essay">Essays</a></h5>
+                      <p class="item-subtitle">{{ .Params.subtitle }}</p>
+                    {{ else }}
+                      <h5 class="item-title"><a href="{{ .Permalink}}">{{.Title}}</a>&#x2009;&#x2014;&#x2009;Miscellaneous</h5>
+                    {{ end }}
+                  </li>
                 {{ end }}
-              </li>
-            {{ end }}
+                {{ end }}
+                </ul>
+                </li>
             {{ end }}
             </ul>
             </li>
+          {{ end }}
+          </ul>
+          </li>
         {{ end }}
         </ul>
-        </li>
-      {{ end }}
-      </ul>
-      </li>
-    {{ end }}
-    </ul>
+  </div>
 </div>
-<!-- END TRIAL -->
-
-
 {{ end }}

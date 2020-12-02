@@ -1,15 +1,19 @@
 {{ define "main" }}
-<p>See <a href="/note">the list of all notes.</a></p>
-<article class="message is-dark">
-  <div class="message-header">
-    <p><a href="{{ .Permalink }}">{{ .Date.Format "January 2, 2006 15:04:05" }}</a></p>
+<div class="section">
+  <div class="content grid">
+    <p>See <a href="/note">the list of all notes.</a></p>
+    <article class="message is-dark">
+      <div class="message-header">
+        <p><a href="{{ .Permalink }}">{{ .Date.Format "January 2, 2006 15:04:05" }}</a></p>
+      </div>
+      <div class="message-body">
+        {{ .Content }}
+      </div>
+    </article>
+    <div class="columns">
+    {{if .PrevInSection}}<div class="column"><div class="box">Older Note:<br/><a href="{{.PrevInSection.Permalink}}">{{ .PrevInSection.Date.Format "Jan. 2, 2006 15:04" }}</a></div></div>{{end}}
+    {{if .NextInSection}}<div class="column"><div class="box">Younger Note:<br/><a href="{{.NextInSection.Permalink}}">{{ .NextInSection.Date.Format "Jan. 2, 2006 15:04" }}</a></div></div>{{end}}
+    </div>
   </div>
-  <div class="message-body">
-    {{ .Content }}
-  </div>
-</article>
-<div class="columns">
-{{if .PrevInSection}}<div class="column"><div class="box">Older Note:<br/><a href="{{.PrevInSection.Permalink}}">{{ .PrevInSection.Date.Format "Jan. 2, 2006 15:04" }}</a></div></div>{{end}}
-{{if .NextInSection}}<div class="column"><div class="box">Younger Note:<br/><a href="{{.NextInSection.Permalink}}">{{ .NextInSection.Date.Format "Jan. 2, 2006 15:04" }}</a></div></div>{{end}}
 </div>
 {{ end }}

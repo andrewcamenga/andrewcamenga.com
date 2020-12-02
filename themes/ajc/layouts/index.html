@@ -1,7 +1,11 @@
 {{ define "main" }}
+<div class="section">
+  <div class="content grid">
   {{ range first 1 (where .Site.RegularPages "Section" "journal") }}
       <h2 class="title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
      {{ with .Params.subtitle }}<p class="subtitle has-text-grey-light ajc-underline is-italic" style="b">{{ . }}</p>{{end}}
       {{ .Content }}
   {{ end }}
+  </div>
+</div>
 {{ end }}

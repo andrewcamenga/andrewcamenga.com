@@ -1,5 +1,6 @@
 {{ define "main" }}
-<div class="archive">
+<div class="section">
+  <div class="content grid">
   <h1 class="title has-text-centered">List of {{.Type | title}} posts</h1>
     <ul class="archive-list">
       <li class="year">
@@ -27,5 +28,6 @@
       </ul>
       </li>
     </ul>
+  </div>
 </div>
 {{ end }}

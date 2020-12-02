@@ -1,36 +1,38 @@
 {{ define "main" }}
-<div class="archive">
-  <h1 class="title has-text-centered">List of {{.Type | title}} posts</h1>
-    <ul class="archive-list">
-    {{ range .Pages.GroupByDate "2006" "desc" }}
-      <li class="year">
-        <div class="year-info">
-        <h2 class="year-title date">{{ .Key }}</h2>
-        </div>
-        <ul class="year-items">
-        {{ range .Pages.GroupByDate "Jan" "desc" }}
-          <li class="month">
-          <h3 class="month-title date"><span class="month-sticky">{{ .Key }}</span></h3>
-          <ul class="month-items">
-          {{ range .Pages.GroupByDate "02" "desc" }}
-            <li class="day">
-              <h4 class="day-title date"><span class="day-sticky">{{ .Key }}</span></h4>
-            <ul class="day-items">
-            {{ range .Pages.ByTitle }}
-              <li class="item">
-                <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Date.Format "15:04" }}</a></h5>
-                {{ .Content }}
-              </li>
+<div class="section">
+  <div class="content grid">
+      <h1 class="title has-text-centered">List of {{.Type | title}} posts</h1>
+        <ul class="archive-list">
+        {{ range .Pages.GroupByDate "2006" "desc" }}
+          <li class="year">
+            <div class="year-info">
+            <h2 class="year-title date">{{ .Key }}</h2>
+            </div>
+            <ul class="year-items">
+            {{ range .Pages.GroupByDate "Jan" "desc" }}
+              <li class="month">
+              <h3 class="month-title date"><span class="month-sticky">{{ .Key }}</span></h3>
+              <ul class="month-items">
+              {{ range .Pages.GroupByDate "02" "desc" }}
+                <li class="day">
+                  <h4 class="day-title date"><span class="day-sticky">{{ .Key }}</span></h4>
+                <ul class="day-items">
+                {{ range .Pages.ByTitle }}
+                  <li class="item">
+                    <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Date.Format "15:04" }}</a></h5>
+                    {{ .Content }}
+                  </li>
+                {{ end }}
+                </ul>
+                </li>
             {{ end }}
             </ul>
             </li>
+          {{ end }}
+          </ul>
+          </li>
         {{ end }}
         </ul>
-        </li>
-      {{ end }}
-      </ul>
-      </li>
-    {{ end }}
-    </ul>
+  </div>
 </div>
 {{ end }}

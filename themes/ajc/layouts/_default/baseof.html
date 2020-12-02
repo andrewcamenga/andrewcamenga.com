@@ -2,10 +2,8 @@
 <html class="has-navbar-fixed-top">
     {{- partial "head.html" . -}}
     <body>
-        {{- partial "header.html" . -}}
-        <div class="section content wrapper">
+        {{- partial "top-bar.html" . -}}
         {{- block "main" . }}{{- end }}
-        </div>
         {{- partial "footer.html" . -}}
     </body>
 </html>
