@@ -1,4 +1,6 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
+  <h1 class="title">{{ .Title }}</h1>
+  {{ with .Params.subtitle }}<p class="subtitle ajc-underline has-text-grey-light is-italic">{{ . }}</p>{{end}}
   {{ .Content }}
+  {{ with .Params.summary }}<p class="box"><b>Summary:</b> {{ . }}</p>{{end}}
 {{ end }}

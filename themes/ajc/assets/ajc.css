@@ -9986,7 +9986,6 @@ ul.archive-list,
   font-weight: 400;
   margin-bottom: 0.31959em;
   position: relative;
-  background-color: hsl(240, 100%, 98%);
 }
 
 .archive-list .item-title__text {
@@ -10056,6 +10055,10 @@ ul.archive-list,
     gap: 0 0.5rem;
   }
 }
+.ajc-underline {
+  border-bottom: 1px solid black;
+}
+
 .archive .columns .column {
   padding-top: 0;
   padding-bottom: 0;

@@ -133,7 +133,6 @@ ul.archive-list,
     font-weight: 400;
     margin-bottom: .31959em;
     position: relative;
-    background-color: hsl(240, 100%, 98%);
 }
 
 .archive-list .item-title__text {

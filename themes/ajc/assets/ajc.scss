@@ -22,6 +22,8 @@ $body-size: 18px;
 
 @import "ajc-archive-list";
 
+.ajc-underline {border-bottom:1px solid black;} 
+
 .archive .columns .column {padding-top:0; padding-bottom:0;}
 .has-no-bullets {list-style-type: none;}
 

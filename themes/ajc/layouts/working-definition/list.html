@@ -1,31 +1,31 @@
 {{ define "main" }}
-  <div class="archive">
-    <h1 class="title has-text-centered">Working Definitions</h1>
-    <p class="subtitle has-text-centered">working to distill what I mean<br/>
-    <span class="is-size-6 has-text-grey">Always subject to revision.</span></p>
-    <p class="is-size-6 is-italic has-text-grey">These definitions represent what I want to mean when I'm using the terms.Following a short-ish definition, there may be more reflection, but that will usually be reserved for other types of posts (blog posts, essays, notes, and sermons).</p>
-<!-- create a list with all uppercase letters -->
-{{ $letters := split "ABCDEFGHIJKLMNOPQRSTUVWXYZ" "" }}
-
-<!-- range all pages sorted by their title -->
-{{ range .Data.Pages.ByTitle }}
-  <!-- get the first character of each title. Assumes that the title is never empty! -->
-  {{ $firstChar := substr .Title 0 1 | upper }}
- 
-  <!-- in case $firstChar is a letter -->
-  {{ if $firstChar | in $letters }}
-    <!-- get the current letter -->
-    {{ $curLetter := $.Scratch.Get "curLetter" }}
-    <!-- if $curLetter isn't set or the letter has changed -->
-    {{ if ne $firstChar $curLetter }}
-    <!-- update the current letter and print it -->
-      {{ $.Scratch.Set "curLetter" $firstChar }}
-      <h3>{{ $firstChar }}</h3>
-    {{ end }}
-
-   <a href="{{ .Permalink }}">{{ .Title }}</a><br>
-  {{ end }}
-{{ end }} 
-
-  </div>
+<div class="archive">
+  <h1 class="title has-text-centered">List of {{.Type | title}} posts</h1>
+    <ul class="archive-list">
+      <li class="year">
+        <div class="year-info">
+        <h2 class="year-title date">Defined Words</h2>
+        </div>
+        <ul class="year-items">
+          <li class="month">
+          <h3 class="month-title date"><span class="month-sticky">&nbsp;</span></h3>
+          <ul class="month-items">
+          {{ range .Data.Pages.GroupByParam "first-letter"}}
+            <li class="day">
+              <h4 class="day-title date"><span class="day-sticky">{{ .Key }}</span></h4>
+            <ul class="day-items">
+            {{ range .Pages.ByTitle }}
+              <li class="item">
+                <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h5>
+              </li>
+            {{ end }}
+            </ul>
+            </li>
+        {{ end }}
+        </ul>
+        </li>
+      </ul>
+      </li>
+    </ul>
+</div>
 {{ end }}

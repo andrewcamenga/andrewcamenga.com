@@ -8,7 +8,7 @@
         <h2 class="year-title date">{{ .Key }}</h2>
         </div>
         <ul class="year-items">
-        {{ range .Pages.GroupByDate "Oct" "desc" }}
+        {{ range .Pages.GroupByDate "Jan" "desc" }}
           <li class="month">
           <h3 class="month-title date"><span class="month-sticky">{{ .Key }}</span></h3>
           <ul class="month-items">
@@ -18,7 +18,7 @@
             <ul class="day-items">
             {{ range .Pages.ByTitle }}
               <li class="item">
-                <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Date.Format "15:04:05" }}</a></h5>
+                <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Date.Format "15:04" }}</a></h5>
                 {{ .Content }}
               </li>
             {{ end }}

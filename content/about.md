@@ -1,6 +1,6 @@
 ---
 title: "about"
-description: "about this blog"
+description: "about this site"
 date: "2019-09-30"
 ---
 
