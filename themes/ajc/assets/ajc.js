@@ -70,6 +70,11 @@ var get_selected_text = (function() {
 // function to handle opening and closing footnotes
 function toggleVisible(element){
     const footnoteID = element.id.substring(6);
+    if (footnoteID.length > 5) {
+        shortfootnoteID = element.id.substring(39);
+    } else {
+        shortfootnoteID = footnoteID;
+    }
     const newdivID   = "divid-"+footnoteID;
     if (element.getAttribute("data-vis") === "hidden") {
       element.setAttribute("data-vis","seen");
@@ -77,7 +82,7 @@ function toggleVisible(element){
       document.querySelector("#"+newdivID).classList.remove("is-hidden");
     } else {
       element.setAttribute("data-vis","hidden");
-      element.querySelector("a.footnote-ref").innerHTML = footnoteID;
+      element.querySelector("a.footnote-ref").innerHTML = shortfootnoteID;
       document.querySelector("#"+newdivID).classList.add("is-hidden");
     }
 }
@@ -124,7 +129,10 @@ function footnoteEnhancer() {
 	    }
 	  })
 	  
-	  document.querySelector(".footnotes").classList.add("is-hidden"); //if the javascript hasn't bombed out, hide the footnotes at the bottom of the document
+	  const footnoteLists = document.querySelectorAll(".footnotes");
+	  footnoteLists.forEach(function(footnoteList){
+	      footnoteList.classList.add("is-hidden"); //if the javascript hasn't bombed out, hide the footnotes at the bottom of the document
+          })
   }
 }
 

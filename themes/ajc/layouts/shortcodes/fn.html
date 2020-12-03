@@ -1,0 +1,7 @@
+{{- .Page.Scratch.Add "footnote" 1 -}}
+{{- $x := .Page.Scratch.Get "footnote" -}}
+{{- $xs := string $x -}}
+{{- $y := .Inner | markdownify -}}
+{{- $uid := .Page.File.UniqueID -}}
+{{- .Page.Scratch.SetInMap "footnotes" $xs $y -}}
+<sup id="fnref:{{$uid}}-{{$x}}"><a href="#fn:{{$uid}}-{{$x}}" class="footnote-ref" role="doc-noteref">{{$x}}</a></sup>
