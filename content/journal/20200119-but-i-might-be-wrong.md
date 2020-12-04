@@ -10,9 +10,7 @@ learn from mistakes and change as necessary."
 > "It is better to be thought a fool than 
 > to open your mouth and remove all doubt." 
 
-In my childhood circles, that was a favorite proverb[^1]. No, I did not say it to my friends, nor did my friends say it to me. It wasn't a favorite among the children. The proverb was a favorite for those who sought to guide us.
-
-[^1]: Not from the Bible, just a 'wisdom' saying.
+In my childhood circles, that was a favorite proverb{{< fn >}}Not from the Bible, just a 'wisdom' saying.{{< /fn >}}. No, I did not say it to my friends, nor did my friends say it to me. It wasn't a favorite among the children. The proverb was a favorite for those who sought to guide us.
 
 There is wisdom in the proverb. 
 
@@ -35,3 +33,5 @@ It is moments like that that have made me hesitate to write.
 But, a 20 plus year hesitation is long enough.
 
 This is also true about me: I strive to listen, to learn, and to make corrections to what I know and to I how I behave. By God's grace I will learn to do that better and better as long as He grants me life—and learning to demonstrate that reality in a blog may not be a terrible thing.
+
+{{< fnlist >}}

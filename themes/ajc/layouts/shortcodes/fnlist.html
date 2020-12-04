@@ -1,11 +1,8 @@
-{{ if gt (.Scratch.Get "footnote") 0 }}
-{{ $uid := .File.UniqueID }}
+{{- $uid := .Page.File.UniqueID -}}
 <section class="footnotes" role="doc-endnotes">
-   <hr>
    <ol>
-      {{ range $x,$footnote := .Page.Scratch.Get "footnotes" }}
+      {{- range $x,$footnote := .Page.Scratch.Get "footnotes" }}
       <li id="fn:{{$uid}}-{{$x}}" role=doc-endnote>{{$footnote}}<a class="footnote-backref" role="doc-backlink" href="#fnref:{{$uid}}-{{$x}}">return</a></li>
-      {{ end }}
+      {{- end -}}
    </ol>
 </section>
-{{ end }}

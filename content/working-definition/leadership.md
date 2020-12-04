@@ -5,6 +5,8 @@ slug: leadership
 title: "Leadership"
 first-letter: "L"
 ---
-Leadership is the disciplined art of unifying people for a common objective and helping them to accomplish it. [^1]
+Leadership is the disciplined art of unifying people for a common objective and helping them to accomplish it. {{< footnote "1" >}}
 
-[^1]: initial definition provided by David Stall in an SCSC staff preparation session
+{{< footnotelist >}}
+{{< citation "1" >}}initial definition provided by David Stall in an SCSC staff preparation session{{< /citation >}}
+{{< /footnotelist >}}

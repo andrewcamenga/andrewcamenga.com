@@ -21,7 +21,6 @@
                   <li class="item">
                     <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Date.Format "15:04" }}</a></h5>
                     {{ .Content }}
-                    {{- partial "footnotes.html" . -}}
                   </li>
                 {{ end }}
                 </ul>

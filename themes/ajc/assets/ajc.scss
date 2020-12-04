@@ -16,8 +16,6 @@ $body-size: 18px;
     h6 {
       font-family: $family-secondary;
     }
-
-    .wrapper { max-width:70ch;}
 }
 
 @import "ajc-archive-list";
@@ -32,11 +30,19 @@ input[type=checkbox] {display:none;}
 
 .grid { 
       display: grid;
-      grid-template-columns: [xl-start] minmax(0rem, 10%) [md-start] minmax(auto , 70ch) [md-end] 1fr [xl-end];
+      grid-template-columns: [xl-start] minmax(0rem, 7rem) [md-start] minmax(auto , 70ch) [md-end] 1fr [xl-end];
+}
+
+@media screen and (max-width: 1000px) {
+.grid { 
+      display: grid;
+      grid-template-columns: [xl-start] 1fr [md-start] minmax(auto , 70ch) [md-end] 1fr [xl-end];
+      }
 }
 
 .grid * {grid-column: md;}
 .archive-list {grid-column: 1/3;}
+
 
 @media print {
 .footnotes {display: block !important;}

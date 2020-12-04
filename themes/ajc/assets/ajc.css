@@ -9847,10 +9847,6 @@ h5,
 h6 {
     font-family: "Lato", sans-serif;
   }
-
-  .wrapper {
-    max-width: 70ch;
-  }
 }
 .archive-list {
   width: 100%;
@@ -10082,14 +10078,20 @@ input[type=checkbox] {
 
 .grid {
   display: grid;
-  grid-template-columns: [xl-start] minmax(0rem, 10%) [md-start] minmax(auto, 70ch) [md-end] 1fr [xl-end];
+  grid-template-columns: [xl-start] minmax(0rem, 7rem) [md-start] minmax(auto, 70ch) [md-end] 1fr [xl-end];
 }
 
+@media screen and (max-width: 1000px) {
+  .grid {
+    display: grid;
+    grid-template-columns: [xl-start] 1fr [md-start] minmax(auto, 70ch) [md-end] 1fr [xl-end];
+  }
+}
 .grid * {
   grid-column: md;
 }
 
-.grid-xl * {
+.archive-list {
   grid-column: 1/3;
 }
 

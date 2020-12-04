@@ -1,0 +1,6 @@
+{{- $uid := .Page.File.UniqueID -}}
+{{- $y   := .Get 0 -}}
+{{- $uidy := print $uid  $y -}}
+{{- $xs  := index (.Page.Scratch.Get "footnotes") $uidy -}}
+{{- $x   := int $xs -}}
+<li id="fn:{{$uid}}-{{$x}}" role=doc-endnote>{{ .Inner | markdownify }}<a class="footnote-backref" role="doc-backlink" href="#fnref:{{$uid}}-{{$x}}">return</a></li>
