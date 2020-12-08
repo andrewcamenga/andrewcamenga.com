@@ -1,6 +1,6 @@
 {{ define "main" }}
 <div class="section">
-  <div class="content" style="max-width:1000px !important;">
+  <div class="content grid">
       {{ $topics := slice "note" "journal" "essay" "sermon"}}
       {{ $pages := where .Site.Pages "Section" "journal"}}
        <ul class="latest-list">
