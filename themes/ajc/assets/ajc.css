@@ -10287,7 +10287,7 @@ input[type=checkbox] {
 @media screen and (max-width: 1000px) {
   .grid {
     display: grid;
-    grid-template-columns: [xl-start] 1fr [md-start] minmax(auto, 70ch) [md-end] 1fr [xl-end];
+    grid-template-columns: [xl-start] 10px [md-start] minmax(auto, 70ch) [md-end] 10px [xl-end];
   }
 }
 .grid * {

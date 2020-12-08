@@ -4,6 +4,7 @@ $family-primary: "Roboto Slab", serif;
 $family-secondary: "Lato", sans-serif;
 $body-line-height: 1.7;
 $body-size: 18px;
+$body-size-mobile: 16px;
 
 @import "bulma/bulma";
 
@@ -37,7 +38,7 @@ input[type=checkbox] {display:none;}
 @media screen and (max-width: 1000px) {
 .grid { 
       display: grid;
-      grid-template-columns: [xl-start] 1fr [md-start] minmax(auto , 70ch) [md-end] 1fr [xl-end];
+      grid-template-columns: [xl-start] 10px [md-start] minmax(auto , 70ch) [md-end] 10px [xl-end];
       }
 }
 
