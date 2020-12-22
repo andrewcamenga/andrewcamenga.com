@@ -1,10 +1,10 @@
 ﻿@charset "utf-8";
 
 // SETUP VALUES FOR BULMA
-@import url('https://fonts.googleapis.com/css?family=Lato|Roboto+Slab');
-$family-primary: "Roboto Slab", serif;
-$family-secondary: "Lato", sans-serif;
-$body-line-height: 1.65;
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Domine');
+$family-primary: "Domine", serif;
+$family-secondary: "Barlow Semi Condensed", sans-serif;
+$body-line-height: 1.7;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 
@@ -50,7 +50,7 @@ html {
 // PROVIDE Normal ("md") and Wide ("xl") Layouts
 .grid { 
       display: grid;
-      grid-template-columns: [xl-start] 1fr [md-start] minmax(auto , 65ch) [md-end] 1fr [xl-end];
+      grid-template-columns: [xl-start] 1fr [md-start] minmax(auto , 57ch) [md-end] 1fr [xl-end];
 }
 .grid * {
       grid-column: md;
