@@ -1,0 +1,29 @@
+{{ define "main" }}
+<div class="section">
+  <div class="content grid">
+    {{ .Content }}
+  {{ with .Params.experience }}
+  <ul>
+    {{ range $kind, $list := . }}
+    <li><h1 id="{{$kind | lower}}">{{ $kind | upper}}</h1>
+      {{range $list}}
+          {{ range $label, $info :=  . }}
+          <ul>
+            <li><h2>{{ $label | title }} </h2>
+            <ul>
+            {{ with $info.place }}<li><b>Place:</b> {{.}} </li>{{ end }}
+            {{ with $info.location }}<li><b>Location:</b> {{.}} </li>{{ end }}
+            {{ with $info.dates }}<li><b>Dates:</b> {{.}} </li>{{ end }}
+            {{ with $info.description }}<li><b>Description:</b> {{. | markdownify }} </li>{{ end }}
+            </ul>
+            </li>
+          </ul>
+          {{ end }}
+      {{ end }}
+    </li>
+    {{ end }}
+  </ul>
+  {{ end }}
+  </div>
+</div>
+{{ end }}
