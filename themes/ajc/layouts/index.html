@@ -1,5 +1,9 @@
 {{ define "main" }}
 <div class="section">
+  <div class="content grid">
+    {{ .Content }}
+  </div>
+
       {{ $pages := where .Site.Pages "Section" "blog"}}
       {{ $topics := slice "note" "blog" "essay" "sermon"}}
   <div class="content grid">
@@ -24,13 +28,13 @@
                     {{ if eq .Type "note"}}
                       <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Date.Format "January 2, 2006, 3:04 PM" }}</a></h5>
                     {{ else if eq .Type "blog" }}
-                      <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Title }}</a> <span class="is-italic">({{.Date.Format "January 2, 2006"}})</h5>
+                      <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Title }}</a> <span class="is-italic">({{.Date.Format "January 2, 2006"}})</span></h5>
                       <p class="item-subtitle">{{ .Params.subtitle }}</p>
                     {{ else if eq .Type "sermon" }}
-                      <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Title }}</a> <span class="is-italic">({{.Date.Format "January 2, 2006"}})</h5>
+                      <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Title }}</a> <span class="is-italic">({{.Date.Format "January 2, 2006"}})</span></h5>
                       <p class="item-subtitle">{{ .Params.subtitle }}</p>
                     {{ else if eq .Type "essay" }}
-                      <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Title }}</a> <span class="is-italic">({{.Date.Format "January 2, 2006"}})</h5>
+                      <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Title }}</a> <span class="is-italic">({{.Date.Format "January 2, 2006"}})</span></h5>
                       <p class="item-subtitle">{{ .Params.subtitle }}</p>
                     {{ else }}
                     {{ end }}
