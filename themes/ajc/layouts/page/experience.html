@@ -1,20 +1,24 @@
 {{ define "main" }}
+<style>
+ul.nb, ul ul.nb, ul ul ul.nb {list-style-type: none;}
+ul li p, ul li, ul li ul li ul {margin-top: 0px !important; margin-bottom: 0px !important;}
+</style>
 <div class="section">
   <div class="content grid">
     {{ .Content }}
   {{ with .Params.experience }}
-  <ul>
+  <ul class="nb">
     {{ range $kind, $list := . }}
-    <li><h1 id="{{$kind | lower}}">{{ $kind | upper}}</h1>
+    <li><p class="has-text-weight-bold" id="{{$kind | lower}}">{{ $kind | upper}}</p>
       {{range $list}}
           {{ range $label, $info :=  . }}
-          <ul>
-            <li><h2>{{ $label | title }} </h2>
-            <ul>
-            {{ with $info.place }}<li><b>Place:</b> {{.}} </li>{{ end }}
-            {{ with $info.location }}<li><b>Location:</b> {{.}} </li>{{ end }}
-            {{ with $info.dates }}<li><b>Dates:</b> {{.}} </li>{{ end }}
-            {{ with $info.description }}<li><b>Description:</b> {{. | markdownify }} </li>{{ end }}
+          <ul class="nb">
+            <li><p class="has-text-weight-semibold">{{ $label | title }} </p>
+            <ul class="nb" >
+            {{ with $info.organization }}<li class="has-text-weight-bold">{{.}}</li>{{ end }}
+            {{ with $info.location }}<li class="has-text-weight-normal">{{.}} </li>{{ end }}
+            {{ with $info.dates }}<li class="has-text-weight-light is-italic">{{.}}</li>{{ end }}
+            {{ with $info.description }}<li class="has-text-grey-light is-size-7 ml-6">{{. | markdownify }}</li>{{ end }}
             </ul>
             </li>
           </ul>
