@@ -13,3 +13,7 @@ note = "/note/:20060102-:150406"
 
 [markup.goldmark.renderer]
 unsafe= true
+
+[taxonomies]
+  category = "categories"
+  topic = "topics"

@@ -30,8 +30,11 @@ ul.archive-list,
     display: grid;
     grid-template: ". year ." auto/minmax(7rem, 1fr) minmax(min-content, 32rem) minmax(7rem, 1fr);
     position: sticky;
-    top: 60px;
-    padding-top: 0.5em
+    top: 3em;
+    padding-top: 0.5em;
+    background-color: #fefefef7;
+    border-bottom:1px dotted #eeeeeef7;
+    z-index: 1;
 }
 
 .archive-list .year-title {
@@ -45,11 +48,11 @@ ul.archive-list,
 .archive-list .year-title::after {
     content: '';
     display: block;
-    width: 1em;
+    width: 2em;
     height: 0;
-    margin-bottom: .75188em;
-    padding-bottom: calc(.75188em - 2px);
-    border-bottom: 2px solid hsl(222, 10%, 70%);
+    margin-bottom: .3em;
+    padding-bottom: calc(.3em - 3px);
+    border-bottom: 3px solid hsl(222, 10%, 70%);
 }
 
 .archive-list .month {
