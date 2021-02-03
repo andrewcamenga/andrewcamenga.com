@@ -1,11 +1,10 @@
 ﻿---
 layout: home
 title: A Public Space
+updated: "2021-02-02"
 ---
 
-Greetings.
-
-I'm Andrew J. Camenga — a disciple of Jesus, a husband, and a dad. I'm a pastor [by profession](/experience) and calling, a teacher by temperament, and a tinkerer in all manner of things but especially bread-making, cheese-making, disc-golf, and writing.
+Hi! I'm glad you're here. My name is Andrew, and I'm a disciple of Jesus, a husband, and a dad. I'm a pastor [by profession](/experience) and calling, a teacher by temperament, and a tinkerer in all manner of things but especially bread-making, cheese-making, disc-golf, and writing.
 
 This site will likely grow to reflect all of those things.
 
