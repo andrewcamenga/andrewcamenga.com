@@ -103,12 +103,19 @@ experience:
     10: 
       ? "General Council"
       : 
-        Dates: May 2019 — Present
+        Dates: May 2019 — Present | (prior service) January 2000 - August 2012 (ex-officio)
         Description: |
             The General Council of the Seventh Day Baptist General Conference shall "provide creative leadership and initiative for Seventh Day Baptists. It shall implement the resolutions and budget adopted by General Conference in session. It shall report annually to General Conference, including in its report an account of the implementation of previous General Conference action. The General Council shall act with the authority of General Conference in all denominational matters between sessions of General Conference."
         Organization: Seventh Day Baptist General Conference 
+    15:
+      ? "Chair, Executive Council"
+      :
+        Dates: June 2018 — Present
+        Description: |
+            The Executive Council of the Apalachian Seventh Day Baptist Association coordinates the ministry and organization of the Association between sessions. The Association consists of a dozen churches spread from Alabama in the south to Ohio and Pennsylvania in the north.
+        Organization: The Apalachian Seventh Day Baptist Association
     20: 
-      ? "S D B-U (Seventh Day Baptist \"University\")"
+      ? "Instructor, S D B-U (Seventh Day Baptist \"University\")"
       : 
         Dates: Each Fall from 2018 — Present
         Description: |
@@ -119,6 +126,13 @@ experience:
             * better understand and articulate faith in the context of the Biblical witness and 
             * appreciate how what we believe influences how we live."
         Organization: Seventh Day Baptist General Conference 
+    25:
+      ? "President"
+      :
+       Dates: September 2015 — Present
+       Description: |
+           I'm serving with a group of colleagues to start The Seventh Day Baptist Theoogical Society. We've described it this way: "The Society exists to cultivate disciplined scholarship among Seventh Day Baptists by providing outlets for the written and oral expression of thought and research in theological studies in order to strengthen the work and witness of Seventh Day Baptists."
+       Organization: Seventh Day Baptist Theological Society
     30: 
       ? "Training Director / Staff"
       : 
