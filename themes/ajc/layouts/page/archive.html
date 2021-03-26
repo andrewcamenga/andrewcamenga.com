@@ -1,20 +1,21 @@
 {{ define "main" }}
 <div class="section">
   <div class="content grid">
-    <h1 class="title has-text-centered">List of Everything</h1>
-    <p class="subtitle has-text-centered">(“The Archive”)</p>
-    <p class="subtitle has-text-centered">
-        <a href="/blog">Blog</a> |
-        <a href="/working-definition">Definitions</a> |
-        <a href="/essay">Essays</a> |
-        <a href="/note">Notes</a> |
-        <a href="/sermon">Sermons</a><br/>
-        <span class="has-text-grey is-size-6">intermixed and arranged by date</span></p>
-      {{ $pages := where .Site.Pages "Section" "blog"}}
-      {{ $pages := $pages | union ( where .Site.Pages "Section" "working-definition" ) }}
-      {{ $pages := $pages | union ( where .Site.Pages "Section" "sermon" ) }}
-      {{ $pages := $pages | union ( where .Site.Pages "Section" "essay" ) }}
-      {{ $pages := $pages | union ( where .Site.Pages "Section" "note" ) }}
+    <h1 class="title">The Archive</h1>
+    <p class="subtitle is-size-5 is-italic">A list of all the content on the site except for <a href="/notes">notes</a>.<br/>
+    <span class="has-text-grey is-size-6">intermixed and arranged by date</span></p>
+    <p class="has-text-right">You can go to lists of content by type: <br/>
+        <a href="/journal">Journal</a> |
+        <a href="/essays">Essays</a> |
+        <a href="/sermons">Sermons</a> |
+        <a href="/notes">Notes</a> |
+        <a href="/working-definitions">Definitions</a></p>
+
+
+      {{ $pages := where .Site.Pages "Section" "journal"}}
+      {{ $pages := $pages | union ( where .Site.Pages "Section" "working-definitions" ) }}
+      {{ $pages := $pages | union ( where .Site.Pages "Section" "sermons" ) }}
+      {{ $pages := $pages | union ( where .Site.Pages "Section" "essays" ) }}
     
         <ul class="archive-list">
         {{ range $pages.GroupByDate "2006" "desc" }}
@@ -34,18 +35,15 @@
                 {{ range .Pages.ByTitle }}
                 {{ if ne .Kind "section" }}
                   <li class="item">
-                    {{ if eq .Type "note"}}
-                      <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Date.Format "15:04" }}</a>&#x2009;&#x2014;&#x2009;<a href="/note">Notes</a></h5>
-                      {{ .Content }}
-                    {{ else if eq .Type "blog" }}
+                    {{ if eq .Type "journal" }}
                       <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Title }}</a>&#x2009;&#x2014;&#x2009;<a href="/blog">Blog</a></h5>
                       <p class="item-subtitle">{{ .Params.subtitle }}</p>
-                    {{ else if eq .Type "working-definition" }}
+                    {{ else if eq .Type "working-definitions" }}
                       <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Title }}</a>&#x2009;&#x2014;&#x2009;<a href="/working-definition">Definitions</a></h5>
-                    {{ else if eq .Type "sermon" }}
+                    {{ else if eq .Type "sermons" }}
                       <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Title }}</a>&#x2009;&#x2014;&#x2009;<a href="/sermon">Sermons</a></h5>
                       <p class="item-subtitle">{{ .Params.subtitle }}</p>
-                    {{ else if eq .Type "essay" }}
+                    {{ else if eq .Type "essays" }}
                       <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Title }}</a>&#x2009;&#x2014;&#x2009;<a href="/essay">Essays</a></h5>
                       <p class="item-subtitle">{{ .Params.subtitle }}</p>
                     {{ else }}
