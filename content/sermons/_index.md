@@ -13,6 +13,6 @@ preparation to keep track when standing in front of people.*
 in the process is to create a document for each sermon that captures the purpose
 in a shareble form. If that works, the documents will be shared here.*
 
-*For now, I share the notes from a sermon prepared for the Sevent Day Baptist 
+*For now, I share the notes from a sermon prepared for the Seventh Day Baptist 
 General Conference sessions in 2014 along with a recording of the message.*{{< /fn >}}. Reformated for reading.</p>
 
