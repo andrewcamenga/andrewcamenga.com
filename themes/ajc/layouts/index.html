@@ -4,8 +4,8 @@
     {{ .Content }}
   </div>
 
-      {{ $pages := where .Site.Pages "Section" "blog"}}
-      {{ $topics := slice "note" "blog" "essay" "sermon"}}
+      {{ $pages := where .Site.Pages "Section" "journal"}}
+      {{ $topics := slice "notes" "journal" "essays" "sermons"}}
   <div class="content grid">
        <ul class="latest-list">
           <li class="year">
@@ -25,15 +25,15 @@
                   <h4 class="day-title date"><span class="day-sticky">&nbsp;</span></h4>
                 <ul class="day-items">
                   <li class="item">
-                    {{ if eq .Type "note"}}
+                    {{ if eq .Type "notes"}}
                       <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Date.Format "January 2, 2006, 3:04 PM" }}</a></h5>
-                    {{ else if eq .Type "blog" }}
+                    {{ else if eq .Type "journal" }}
                       <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Title }}</a> <span class="is-italic">({{.Date.Format "January 2, 2006"}})</span></h5>
                       <p class="item-subtitle">{{ .Params.subtitle }}</p>
-                    {{ else if eq .Type "sermon" }}
+                    {{ else if eq .Type "sermons" }}
                       <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Title }}</a> <span class="is-italic">({{.Date.Format "January 2, 2006"}})</span></h5>
                       <p class="item-subtitle">{{ .Params.subtitle }}</p>
-                    {{ else if eq .Type "essay" }}
+                    {{ else if eq .Type "essays" }}
                       <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Title }}</a> <span class="is-italic">({{.Date.Format "January 2, 2006"}})</span></h5>
                       <p class="item-subtitle">{{ .Params.subtitle }}</p>
                     {{ else }}
