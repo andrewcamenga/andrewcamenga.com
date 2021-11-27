@@ -17,7 +17,7 @@ ul li p, ul li, ul li ul li ul {margin-top: 0px !important; margin-bottom: 0px !
             <ul class="nb" >
             {{ with $info.organization }}<li class="has-text-weight-bold">{{.}}</li>{{ end }}
             {{ with $info.location }}<li class="has-text-weight-normal">{{.}} </li>{{ end }}
-            {{ with $info.dates }}<li class="has-text-weight-light is-italic">{{.}}</li>{{ end }}
+            {{ with $info.dates }}<li class="has-text-weight-light is-italic">{{. | markdownify}}</li>{{ end }}
             {{ with $info.description }}<li class="has-text-grey-light is-size-7 ml-6">{{. | markdownify }}</li>{{ end }}
             </ul>
             </li>

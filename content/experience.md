@@ -18,7 +18,26 @@ experience:
         Dates: 1988-1992
         Location: "Houghton, NY"
         Organization: "Houghton College"
-  Paid: 
+  Endorsements:
+    10: 
+      ? "Ordination"
+      : 
+        Dates: October 18, 1997
+        Organization: "Adams Center Seventh Day Baptist Church"
+        Description: |
+           The Adams Center Seventh Day Baptist Church called an ordination council to examine my qualification and readiness to be recognized as a minister of the gospel. They invited representatives from churches from the Allegany, Central New York, and Eastern Associations as well as representatives from the Seventh Day Baptist General Conference, USA & Canada.
+           
+           Following the council and based upon its recommendation, the church ordained me for pastoral ministry. The Statement of Belief produced for that council can be reviewed [on this website.](/essays/ordination-statement)
+    20: 
+      ? "Accreditation"
+      : 
+        Dates: August 1999, **renewed** 2019
+        Organization: "Seventh Day Baptist General Conference, USA & Canada, Ltd."
+        Description: |
+            Because Ordination is a local church function, the Seventh Day Baptist General Council created an accreditation process to recognize individuals who have been ordained by a local church, who have obtained a requisite combination of experience and education, who have maintained a faithful witness in the context of a local congregation, and who are continuing to pursue educational experience.
+            
+            **Note:** Before 2015, Accreditation, like ordiantion, was granted once. In 2015, the Conference began to grant Accreditation for 5 year terms and created a renewal process for ascertaining that the individual still desires accreditation and still meets the necessary criteria.
+  Professional: 
     10: 
       ? "Pastor"
       : 
@@ -103,7 +122,9 @@ experience:
     10: 
       ? "General Council"
       : 
-        Dates: May 2019 — Present | (prior service) January 2000 - August 2012 (ex-officio)
+        Dates: |
+            May 2019 — Present | *chair* August 2021 — present <br/>
+            **prior** January 2000 - August 2012, *ex-officio*
         Description: |
             The General Council of the Seventh Day Baptist General Conference shall "provide creative leadership and initiative for Seventh Day Baptists. It shall implement the resolutions and budget adopted by General Conference in session. It shall report annually to General Conference, including in its report an account of the implementation of previous General Conference action. The General Council shall act with the authority of General Conference in all denominational matters between sessions of General Conference."
         Organization: Seventh Day Baptist General Conference 
@@ -155,8 +176,20 @@ experience:
             The purpose for building was to increase ministry opportunities for the church by providing greater space for fellowship meals, events for the community, and christian education space.
         Location: Little Genesee, NY
         Organization: First Seventh Day Baptist Church of Genesee
+    90: 
+      Treasurer:
+        Dates: August 1984 — August 1985
+        Organization: National Seventh Day Baptist Youth Fellowship
+        Description: |
+            Listing this one just for fun.
+            
+            Responsible for collecting, tracking, and disbursing the funds needed for the activities of the SDBYF during General Conference week.
 ---
 
+# Experience
+
+## Primary Professional and Volunteer History
 * [Education](#education)
-* [Paid Positions](#paid)
+* [Endorsements](#endorsements)
+* [Professional Positions](#professional)
 * [Volunteer Positions](#volunteer)
