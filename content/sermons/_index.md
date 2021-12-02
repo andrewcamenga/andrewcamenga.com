@@ -9,7 +9,7 @@ None of those notes were fit for sharing—they were designed to capture the
 big idea, the flow of thought needed to get there, and just enough of my 
 preparation to keep track when standing in front of people.*
 
-*I've just begun (April 2021) to rework my sermon creation process. One of my goals
+*I've begun to rework my sermon creation process. One of my goals
 in the process is to create a document for each sermon that captures the purpose
 in a shareble form. If that works, the documents will be shared here.*
 
