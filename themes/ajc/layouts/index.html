@@ -4,8 +4,8 @@
     {{ .Content }}
   </div>
 
-      {{ $pages := where .Site.Pages "Section" "journal"}}
-      {{ $topics := slice "notes" "journal" "essays" "sermons"}}
+      {{ $pages := where .Site.Pages "Section" "blog"}}
+      {{ $topics := slice "notes" "blog" "essays" "sermons"}}
   <div class="content grid">
        <ul class="latest-list">
           <li class="year">
@@ -27,7 +27,7 @@
                   <li class="item">
                     {{ if eq .Type "notes"}}
                       <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Date.Format "January 2, 2006, 3:04 PM" }}</a></h5>
-                    {{ else if eq .Type "journal" }}
+                    {{ else if eq .Type "blog" }}
                       <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Title }}</a> <span class="is-italic">({{.Date.Format "January 2, 2006"}})</span></h5>
                       <p class="item-subtitle">{{ .Params.subtitle }}</p>
                     {{ else if eq .Type "sermons" }}

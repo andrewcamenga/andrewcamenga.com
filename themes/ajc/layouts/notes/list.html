@@ -2,7 +2,7 @@
 <div class="section">
   <div class="content grid">
       <h1 class="title">{{.Type | title}}</h1>
-      <p class="subtitle is-size-5 is-italic">Quickly written. Lightly edited.<br/>Random Topics. A simple record.</p>
+      {{.Content}}
         <ul class="archive-list">
         {{ range .Pages.GroupByDate "2006" "desc" }}
           <li class="year">

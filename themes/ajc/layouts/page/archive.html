@@ -5,14 +5,14 @@
     <p class="subtitle is-size-5 is-italic">A list of all the content on the site except for <a href="/notes">notes</a>.<br/>
     <span class="has-text-grey is-size-6">intermixed and arranged by date</span></p>
     <p class="has-text-right">You can go to lists of content by type: <br/>
-        <a href="/journal">Journal</a> |
+        <a href="/blog">Blog</a> |
         <a href="/essays">Essays</a> |
         <a href="/sermons">Sermons</a> |
         <a href="/notes">Notes</a> |
         <a href="/working-definitions">Definitions</a></p>
 
 
-      {{ $pages := where .Site.Pages "Section" "journal"}}
+      {{ $pages := where .Site.Pages "Section" "blog"}}
       {{ $pages := $pages | union ( where .Site.Pages "Section" "working-definitions" ) }}
       {{ $pages := $pages | union ( where .Site.Pages "Section" "sermons" ) }}
       {{ $pages := $pages | union ( where .Site.Pages "Section" "essays" ) }}
@@ -35,7 +35,7 @@
                 {{ range .Pages.ByTitle }}
                 {{ if ne .Kind "section" }}
                   <li class="item">
-                    {{ if eq .Type "journal" }}
+                    {{ if eq .Type "blog" }}
                       <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Title }}</a>&#x2009;&#x2014;&#x2009;<a href="/blog">Blog</a></h5>
                       <p class="item-subtitle">{{ .Params.subtitle }}</p>
                     {{ else if eq .Type "working-definitions" }}
