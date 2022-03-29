@@ -1,4 +1,4 @@
-localhost:2048
+localhost:2047
 file_server {
     root d:/dev/andrewcamenga.com/public
     index index.html
