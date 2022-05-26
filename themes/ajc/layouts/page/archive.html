@@ -39,12 +39,12 @@
                       <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Title }}</a>&#x2009;&#x2014;&#x2009;<a href="/blog">Blog</a></h5>
                       <p class="item-subtitle">{{ .Params.subtitle }}</p>
                     {{ else if eq .Type "working-definitions" }}
-                      <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Title }}</a>&#x2009;&#x2014;&#x2009;<a href="/working-definition">Definitions</a></h5>
+                      <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Title }}</a>&#x2009;&#x2014;&#x2009;<a href="/working-definitions">Definitions</a></h5>
                     {{ else if eq .Type "sermons" }}
-                      <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Title }}</a>&#x2009;&#x2014;&#x2009;<a href="/sermon">Sermons</a></h5>
+                      <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Title }}</a>&#x2009;&#x2014;&#x2009;<a href="/sermons">Sermons</a></h5>
                       <p class="item-subtitle">{{ .Params.subtitle }}</p>
                     {{ else if eq .Type "essays" }}
-                      <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Title }}</a>&#x2009;&#x2014;&#x2009;<a href="/essay">Essays</a></h5>
+                      <h5 class="item-title"><a href="{{ .Permalink }}">{{ .Title }}</a>&#x2009;&#x2014;&#x2009;<a href="/essays">Essays</a></h5>
                       <p class="item-subtitle">{{ .Params.subtitle }}</p>
                     {{ else }}
                       <h5 class="item-title"><a href="{{ .Permalink}}">{{.Title}}</a>&#x2009;&#x2014;&#x2009;Miscellaneous</h5>
