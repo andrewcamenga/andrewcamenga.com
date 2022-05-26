@@ -1,6 +1,8 @@
 <head>
+    {{ $buildTime := now.Format "Jan 2, 2006 at 3:04pm (EST)" }}{{ printf "<!-- build time: %s -->" $buildTime | safeHTML }}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>AJC | {{ .Title }}</title>
     {{/*
     {{ $scss := resources.Get "ajc.scss" }}
