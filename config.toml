@@ -1,6 +1,7 @@
 title = "Andrew J. Camenga"
 baseURL = ""
 copyright = "&copy;{year}"
+timeZone = "America/New_York"
 
 defaultContentLanguage = "en"
 languageCode = "en-us"

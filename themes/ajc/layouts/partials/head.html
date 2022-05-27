@@ -1,17 +1,17 @@
-<head>
-    {{ $buildTime := now.Format "Jan 2, 2006 at 3:04pm (MST)" }}{{ printf "<!-- build time: %s -->" $buildTime | safeHTML }}
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>AJC | {{ .Title }}</title>
-    {{/*
-    {{ $scss := resources.Get "ajc.scss" }}
-    {{ $style := $scss | resources.ToCSS   }}
-    */}}
-    {{ $style := resources.Get "ajc.scss" | resources.ToCSS (dict "outputStyle" "compressed") | fingerprint }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
-    {{ partial "favicon.html" . }}
-    {{ range .AlternativeOutputFormats -}}
-        {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
-    {{ end -}}
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {{ $buildTime := now.Format "Jan 2, 2006 at 3:04pm (MST)" }}{{ printf `<meta name="build-time" content="%s">` $buildTime | safeHTML }}
+        
+        <title>AJC | {{ .Title }}</title>
+        {{ $scss := resources.Get "ajc.scss" -}}
+        {{- $style := $scss | resources.ToCSS   -}}
+        {{ $style := resources.Get "ajc.scss" | resources.ToCSS (dict "outputStyle" "compressed") | fingerprint }}
+        <link rel="stylesheet" href="{{ $style.Permalink }}">
+        {{ partial "favicon.html" . }}
+        {{- range .AlternativeOutputFormats -}}
+        {{- printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML -}}
+        {{- end }}
+    </head>
+

@@ -12,10 +12,10 @@
         <a href="/working-definitions">Definitions</a></p>
 
 
-      {{ $pages := where .Site.Pages "Section" "blog"}}
-      {{ $pages := $pages | union ( where .Site.Pages "Section" "working-definitions" ) }}
-      {{ $pages := $pages | union ( where .Site.Pages "Section" "sermons" ) }}
-      {{ $pages := $pages | union ( where .Site.Pages "Section" "essays" ) }}
+      {{ $pages := where .Site.RegularPages "Section" "blog"}}
+      {{ $pages := $pages | union ( where .Site.RegularPages "Section" "working-definitions" ) }}
+      {{ $pages := $pages | union ( where .Site.RegularPages "Section" "sermons" ) }}
+      {{ $pages := $pages | union ( where .Site.RegularPages "Section" "essays" ) }}
     
         <ul class="archive-list">
         {{ range $pages.GroupByDate "2006" "desc" }}
