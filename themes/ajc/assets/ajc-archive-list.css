@@ -28,7 +28,7 @@ ul.archive-list,
     width: 100%;
     margin: 0 auto;
     display: grid;
-    grid-template: ". year ." auto/minmax(7rem, 1fr) minmax(min-content, 32rem) minmax(7rem, 1fr);
+    grid-template: ". year ." auto/minmax(7rem, 0.75fr) minmax(min-content, 32rem) minmax(7rem, 1.25fr);
     position: sticky;
     top: 3em;
     padding-top: 0.5em;
@@ -62,7 +62,7 @@ ul.archive-list,
     margin-bottom: 3.00752em;
     list-style-type: none;
     display: grid;
-    grid-template: "title entries ." auto/1fr minmax(min-content, 36rem) 1fr;
+    grid-template: "title entries ." auto/0.75fr minmax(min-content, 36rem) 1.25fr;
     gap: 0 1rem;
     justify-content: stretch;
     justify-items: stretch
@@ -189,11 +189,11 @@ ul.archive-list,
 
 @media screen and (max-width: 768px) {
     .archive-list .year-info {
-        grid-template-columns: minmax(4rem, 0.5fr) minmax(min-content, 30rem) minmax(4rem, 1.5fr)
+        grid-template-columns: minmax(4rem, 0.75fr) minmax(min-content, 30rem) minmax(4rem, 1.25fr)
     }
     .archive-list .month {
         gap: 0.5rem;
-        grid-template-columns: 0.5fr minmax(min-content, 34rem) 1.5fr
+        grid-template-columns: 0.75fr minmax(min-content, 34rem) 1.25fr
     }
     .archive-list .month-title {
         width: 2rem
