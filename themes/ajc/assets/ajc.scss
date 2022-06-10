@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Domine');
 $family-primary: "Domine", serif;
 $family-secondary: "Barlow Semi Condensed", sans-serif;
-$body-line-height: 1.7;
+$body-line-height: 1.6;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 
@@ -15,7 +15,7 @@ $fullhd-enabled: false;
 
 // Set default font size by viewing device
 html {
-  font-size: 18px;
+  font-size: 17px;
   @include mobile {
     font-size: 16px;
   }
@@ -23,7 +23,7 @@ html {
     font-size: 16px;
   }
  @include desktop {
-    font-size: 18px;
+    font-size: 17px;
   }
 
 }
@@ -50,7 +50,7 @@ html {
 // PROVIDE Normal ("md") and Wide ("xl") Layouts
 .grid { 
       display: grid;
-      grid-template-columns: [xl-start] 1fr [md-start] minmax(auto , 57ch) [md-end] 1fr [xl-end];
+      grid-template-columns: [xl-start] 0.5fr [md-start] minmax(auto , 57ch) [md-end] 1.5fr [xl-end];
 }
 .grid * {
       grid-column: md;

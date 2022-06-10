@@ -186,11 +186,11 @@ ul.latest-list,
 
 @media screen and (max-width: 768px) {
     .latest-list .year-info {
-        grid-template-columns: minmax(4rem, 1fr) minmax(min-content, 30rem) minmax(4rem, 1fr)
+        grid-template-columns: minmax(4rem, 0.5fr) minmax(min-content, 30rem) minmax(4rem, 1.5fr)
     }
     .latest-list .month {
         gap: 0.5rem;
-        grid-template-columns: 1fr minmax(min-content, 34rem) 1fr
+        grid-template-columns: 0.5fr minmax(min-content, 34rem) 1.5fr
     }
     .latest-list .month-title {
         width: 2rem
