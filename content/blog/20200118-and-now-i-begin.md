@@ -5,6 +5,7 @@ title: And Now I Begin
 subtitle: a decision to begin writing in public
 summary: "Without promise of quality or quantity but with the hope
 that I can eventually learn to write something worth reading …"
+draft: true
 ---
 
 I don't know what will show up in this space.

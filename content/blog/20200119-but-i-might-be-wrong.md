@@ -5,6 +5,7 @@ title: But I Might Be Wrong
 subtitle: hesitating to write for public consumption
 summary: "While I don't want to be considered a fool, I can 
 learn from mistakes and change as necessary."
+draft: true
 ---
 
 > "It is better to be thought a fool than 
