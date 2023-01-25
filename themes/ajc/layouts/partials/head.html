@@ -5,6 +5,7 @@
         {{ $buildTime := now.Format "Jan 2, 2006 at 3:04pm (MST)" }}{{ printf `<meta name="build-time" content="%s">` $buildTime | safeHTML }}
         
         <title>AJC | {{ .Title }}</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Domine">
         {{ $scss := resources.Get "ajc.scss" -}}
         {{- $style := $scss | resources.ToCSS   -}}
         {{ $style := resources.Get "ajc.scss" | resources.ToCSS (dict "outputStyle" "compressed") | fingerprint }}

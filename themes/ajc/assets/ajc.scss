@@ -1,8 +1,10 @@
 ﻿@charset "utf-8";
-
+// GOOGLE FONTS
+// The @import line is included in the head.html partial. 
+// If you change fonts, you'll need to change this
+// @import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Domine");
 // SETUP VALUES FOR BULMA
-@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Domine');
-$family-primary: "Domine", serif;
+$family-primary: "Domine", serif; //If you chang4e these, change the google fonts line referenced above in GOOGLE FONTS
 $family-secondary: "Barlow Semi Condensed", sans-serif;
 $body-line-height: 1.8;
 $widescreen-enabled: false;
