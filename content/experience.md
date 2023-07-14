@@ -36,7 +36,7 @@ experience:
         Description: |
             Because Ordination is a local church function, the Seventh Day Baptist General Council created an accreditation process to recognize individuals who have been ordained by a local church, who have obtained a requisite combination of experience and education, who have maintained a faithful witness in the context of a local congregation, and who are continuing to pursue educational experience.
             
-            **Note:** Before 2015, Accreditation, like ordiantion, was granted once. In 2015, the Conference began to grant Accreditation for 5 year terms and created a renewal process for ascertaining that the individual still desires accreditation and still meets the necessary criteria.
+            **Note:** Before 2015, Accreditation, like ordination, was granted once. In 2015, the Conference began to grant Accreditation for 5 year terms and created a renewal process for ascertaining that the individual still desires accreditation and still meets the necessary criteria.
   Professional: 
     10: 
       ? "Pastor"
@@ -138,7 +138,7 @@ experience:
     17:
       ? "Parliamentarian"
       :
-        Dates: July 2015; July 2016 (as backup, served for several sessions)
+        Dates: July 2015; July 2016 (in 2016 as backup, served for several sessions)
         Description: |
             The parliamentarian provides the president of the Seventh Day Baptist General Conference with advice about all matters pertaining to conducting the business of the sessions. 
         Organization: Seventh Day Baptist General Conference
