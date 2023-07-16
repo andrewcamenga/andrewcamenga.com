@@ -139,8 +139,7 @@ experience:
       ? "Parliamentarian"
       :
         Dates: |
-            July 2015; July 2016 
-            (in 2016 as backup)
+            July 2015; as Backup: 2016; 2019
         Description: |
             The parliamentarian provides the president of the Seventh Day Baptist General Conference with advice about all matters pertaining to conducting the business of the sessions. 
         Organization: Seventh Day Baptist General Conference
