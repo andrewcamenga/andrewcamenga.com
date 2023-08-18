@@ -211,5 +211,6 @@ experience:
 ## Primary Professional and Volunteer History
 * [Education](#education)
 * [Endorsements](#endorsements)
+* [Internships / Dedicated Service](#internships+%2F+dedicated+service)
 * [Professional Positions](#professional)
 * [Volunteer Positions](#volunteer)
