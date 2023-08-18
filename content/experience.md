@@ -90,7 +90,7 @@ experience:
             I also provided pulpit supply at the Woodville Congregational Church through most of my time with the Adams Center SDB Church.
         Location: "Adams Center, NY"
         Organization: "Adams Center Seventh Day Baptist Church"
-    Internships / Dedicated Service:
+  Internships / Dedicated Service:
     10: 
       ? "Summer Pastor"
       : 
