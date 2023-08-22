@@ -90,49 +90,6 @@ experience:
             I also provided pulpit supply at the Woodville Congregational Church through most of my time with the Adams Center SDB Church.
         Location: "Adams Center, NY"
         Organization: "Adams Center Seventh Day Baptist Church"
-  Internships:
-    10: 
-      ? "Summer Pastor"
-      : 
-        Dates: "June 1994 - August 1994"
-        Description: |
-            Carried pastoral responsibilities (preaching, visitation, etc.) while working with a mentor pastor in Little Genesee, NY.
-        Location: "Richburg, NY"
-        Organization: "Richburg Seventh Day Baptist Church"
-    20: 
-      ? "Pastoral Intern"
-      : 
-        Dates: "June 1993 - August 1993"
-        Description: |
-            Internship with intentional training in sermon preparation & delivery, pre-marital counseling, membership / baptismal training, camp directing, and a other miscellaneous topics.
-        Location: "North Loup, NE"
-        Organization: "North Loup Seventh Day Baptist Church"
-    30: 
-      ? "Summer Director of Youth Ministry"
-      : 
-        Dates: |
-            June 1992- August 1992; <br/>
-            June 1992 - August 1992
-        Description: |
-            Completed several training modules that focused on developing and doing Christian Education in the local church.
-            
-            Developed a week-long teaching and recreation program for Junior High students & led the program during the week of General Conference.
-            
-            Served as a camp counselor with teaching responsibility at multiple Senior High camps in different regions of the United States looking for ways to encourage the youth to work together in the North American Seventh Day Baptist Youth Fellowship and to engage in the business of the Seventh Day Baptist General Conference.
-        Location: "Multiple Locations Across United States"
-        Organization: "Seventh Day Baptist Board of Christian Education"
-    40:
-     ? "Summer Christian Service Corp or Dedicated Service"
-     : 
-       Dates: |
-           Summer 1990 - SCSC, Westerly, RI, & New Life, CT <br/>
-           Summer 1989 - Richburg, NY <br/>
-           Summer 1988 - Allegany Association
-           
-       Description: |
-           Helped with Vacation Bible School, Church Camps, and a variety of church related activities. The primary focus was helping with youth activities.
-           
-           Each summer included participating in leadership training, evaluation of work performed, and exploration of how to improve.
   Volunteer: 
     10: 
       ? "General Council"
@@ -207,6 +164,50 @@ experience:
             Listing this one just for fun.
             
             Responsible for collecting, tracking, and disbursing the funds needed for the activities of the SDBYF during General Conference week.
+  Internships:
+    10: 
+      ? "Summer Pastor"
+      : 
+        Dates: "June 1994 - August 1994"
+        Description: |
+            Carried pastoral responsibilities (preaching, visitation, etc.) while working with a mentor pastor in Little Genesee, NY.
+        Location: "Richburg, NY"
+        Organization: "Richburg Seventh Day Baptist Church"
+    20: 
+      ? "Pastoral Intern"
+      : 
+        Dates: "June 1993 - August 1993"
+        Description: |
+            Internship with intentional training in sermon preparation & delivery, pre-marital counseling, membership / baptismal training, camp directing, and a other miscellaneous topics.
+        Location: "North Loup, NE"
+        Organization: "North Loup Seventh Day Baptist Church"
+    30: 
+      ? "Summer Director of Youth Ministry"
+      : 
+        Dates: |
+            June 1992- August 1992; <br/>
+            June 1992 - August 1992
+        Description: |
+            Completed several training modules that focused on developing and doing Christian Education in the local church.
+            
+            Developed a week-long teaching and recreation program for Junior High students & led the program during the week of General Conference.
+            
+            Served as a camp counselor with teaching responsibility at multiple Senior High camps in different regions of the United States looking for ways to encourage the youth to work together in the North American Seventh Day Baptist Youth Fellowship and to engage in the business of the Seventh Day Baptist General Conference.
+        Location: "Multiple Locations Across United States"
+        Organization: "Seventh Day Baptist Board of Christian Education"
+    40:
+     ? "Summer Christian Service Corp or Dedicated Service"
+     : 
+       Dates: |
+           Summer 1990 - SCSC, Westerly, RI, & New Life, CT <br/>
+           Summer 1989 - Richburg, NY <br/>
+           Summer 1988 - Allegany Association
+           
+       Description: |
+           Helped with Vacation Bible School, Church Camps, and a variety of church related activities. The primary focus was helping with youth activities.
+           
+           Each summer included participating in leadership training, evaluation of work performed, and exploration of how to improve.
+
 ---
 
 # Experience
@@ -214,6 +215,6 @@ experience:
 ## Primary Professional and Volunteer History
 * [Education](#education)
 * [Endorsements](#endorsements)
-* [Internships / Dedicated Service](#internships)
 * [Professional Positions](#professional)
 * [Volunteer Positions](#volunteer)
+* [Internships / Dedicated Service](#internships)
