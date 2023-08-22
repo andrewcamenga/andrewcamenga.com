@@ -110,7 +110,9 @@ experience:
     30: 
       ? "Summer Director of Youth Ministry"
       : 
-        Dates: "June 1991 - August 1991; June 1992 - August 1992"
+        Dates: |
+            June 1992- August 1992; <br/>
+            June 1992 - August 1992
         Description: |
             Completed several training modules that focused on developing and doing Christian Education in the local church.
             
@@ -123,9 +125,10 @@ experience:
      ? "Summer Christian Service Corp or Dedicated Service"
      : 
        Dates: |
-           "Summer 1988 - Allegany Association"
-           "Summer 1989 - Richburg, NY"
-           "Summer 1990 - SCSC, Westerly, RI, & New Life, CT" 
+           Summer 1990 - SCSC, Westerly, RI, & New Life, CT <br/>
+           Summer 1989 - Richburg, NY <br/>
+           Summer 1988 - Allegany Association
+           
        Description: |
            Helped with Vacation Bible School, Church Camps, and a variety of church related activities. The primary focus was helping with youth activities.
            
