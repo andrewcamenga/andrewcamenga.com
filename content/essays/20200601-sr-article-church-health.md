@@ -3,8 +3,8 @@ date: "2020-06-01"
 slug: healthy-church-sr
 title: A Healthy Church
 subtitle: Sabbath Recorder (July/August 2020)
-summary: "Written for the *Sabbath Recorder,* this short article
-begins to explore a Biblical framework for church health.
+summary: "Written for the *Sabbath Recorder,* this short article \
+begins to explore a Biblical framework for church health."
 ---
 
 God has big plans for his church. These plans include us. He is 
