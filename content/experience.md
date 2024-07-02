@@ -186,7 +186,7 @@ experience:
       : 
         Dates: |
             June 1992- August 1992; <br/>
-            June 1992 - August 1992
+            June 1991 - August 1991
         Description: |
             Completed several training modules that focused on developing and doing Christian Education in the local church.
             
