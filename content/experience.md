@@ -108,9 +108,10 @@ experience:
             The Executive Council of the Apalachian Seventh Day Baptist Association coordinates the ministry and organization of the Association between sessions. The Association consists of a dozen churches spread from Alabama in the south to Ohio and Pennsylvania in the north.
         Organization: The Apalachian Seventh Day Baptist Association
     15:
-      ? "Member"
+      ? "Secretary"
       :
-        Dates:  August 2015 — Present | *secretary* August 2020 — Present
+        Dates: August 2020 — Present<br/>
+        **member** August 2015 — Present
         Description: |
             The Southern Cove / Yellow Creek Ministerium is a group of pastors from churches in or near the southern end of Morrison's Cove in PA—roughly corresponding to the boundaries of the Northern Bedford County School District. The pastors work together, finding ways to cooperate for the sake of the gospel.
         Organization: Southern Cove / Yellow Creek Ministerium
