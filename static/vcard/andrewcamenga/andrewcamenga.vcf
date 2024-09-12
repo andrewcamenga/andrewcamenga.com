@@ -1,0 +1,21 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Camenga;Andrew;;;
+FN:Andrew Camenga
+ORG:Salemville Brick Seventh Day Baptist Church
+ADR;TYPE=WORK:786 Golden Rule Drive
+New Enterprise, PA 16664
+TITLE:Pastor
+TEL;TYPE=CELL:(814)212-0300
+TEL;TYPE=WORK:(814)766-0118
+TEL;TYPE=HOME:
+TEL;TYPE=MSG:(814)212-0300
+EMAIL;TYPE=WORK:andrew.camenga@germanseventhdaybaptist.com
+URL;TYPE=Digital Business Card:https://andrewcamenga.com/vcard/andrewcamenga
+URL:https://germanseventhdaybaptist.com
+URL;TYPE=Messenger:https://m.me/andrewcamenga
+URL;TYPE=Website:https://germanseventhdaybaptist.com
+KEY;TYPE=PGP;ENCODING=b:
+NOTE:
+UID:EnBizCard-100051085
+END:VCARD
