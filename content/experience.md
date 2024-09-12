@@ -110,8 +110,7 @@ experience:
     15:
       ? "Secretary"
       :
-        Dates: August 2020 — Present<br/>
-        **member** August 2015 — Present
+        Dates: August 2020 — Present<br/>**member** August 2015 — Present
         Description: |
             The Southern Cove / Yellow Creek Ministerium is a group of pastors from churches in or near the southern end of Morrison's Cove in PA—roughly corresponding to the boundaries of the Northern Bedford County School District. The pastors work together, finding ways to cooperate for the sake of the gospel.
         Organization: Southern Cove / Yellow Creek Ministerium
