@@ -6,13 +6,18 @@
         
         <title>AJC | {{ .Title }}</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Domine">
-        {{ $scss := resources.Get "ajc.scss" -}}
-        {{- $style := $scss | resources.ToCSS   -}}
-        {{ $style := resources.Get "ajc.scss" | resources.ToCSS (dict "outputStyle" "compressed") | fingerprint }}
-        <link rel="stylesheet" href="{{ $style.Permalink }}">
+	{{ $opts := dict
+	  "transpiler" "dartsass"
+	  "targetPath" "css/style.css"
+	  "vars" site.Params.styles
+	  "enableSourceMap" (not hugo.IsProduction)
+	  "includePaths" (slice "node_modules/bootstrap/scss")
+	}}
+	{{ with resources.Get "ajc.scss" | toCSS $opts | minify | fingerprint }}
+	  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+	{{ end }}
         {{ partial "favicon.html" . }}
         {{- range .AlternativeOutputFormats -}}
         {{- printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML -}}
         {{- end }}
     </head>
-

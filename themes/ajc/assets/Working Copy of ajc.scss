@@ -1,0 +1,104 @@
+﻿@charset "utf-8";
+// GOOGLE FONTS
+// The @import line is included in the head.html partial. 
+// If you change fonts, you'll need to change this
+// @import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Domine");
+// SETUP VALUES FOR BULMA
+$family-primary: "Domine", serif; //If you chang4e these, change the google fonts line referenced above in GOOGLE FONTS
+$family-secondary: "Barlow Semi Condensed", sans-serif;
+
+// PROCESS BULMA
+// Import the components you need
+@use "bulma/sass" with (
+$family-primary: $family-primary,
+$family-secondary:$family-secondary,
+$body-line-height:1.8,
+$widescreen-enabled: false,
+$fullhd-enabled: false,
+$
+);
+@forward "bulma/sass/base";
+@forward "bulma/sass/components/card";
+@forward "bulma/sass/components/modal";
+@forward "bulma/sass/components/navbar";
+@forward "bulma/sass/elements/button";
+@forward "bulma/sass/elements/icon";
+@forward "bulma/sass/elements/content";
+@forward "bulma/sass/elements/notification";
+@forward "bulma/sass/elements/progress";
+@forward "bulma/sass/elements/tag";
+@forward "bulma/sass/layout/footer";
+
+// Import the themes so that all CSS variables have a value
+@forward "bulma/sass/themes";
+@use "bulma/sass/utilities/mixins";
+
+// ADDITIONAL CHANGES
+
+// Set default font size by viewing device
+html {
+  font-size: 18px;
+  @include mixins.mobile {
+    font-size: 16px;
+  }
+  @include mixins.tablet {
+    font-size: 16px;
+  }
+ @include mixins.desktop {
+    font-size: 18px;
+  }
+
+}
+
+// Set all headers as something other than the body font
+@media screen { 
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: $family-secondary;
+    }
+}
+
+
+// IMPORT THE GRID LAYOUT INFO FOR LISTS
+@import "ajc-archive-list";
+@import "ajc-latest-list";
+
+
+// CREATE BASIC GRID LAYOUT FOR PAGES
+// PROVIDE Normal ("md") and Wide ("xl") Layouts
+.grid { 
+      display: grid;
+      grid-template-columns: [xl-start] 0.5fr [md-start] minmax(auto , 57ch) [md-end] 1.5fr [xl-end];
+}
+.grid * {
+      grid-column: md;
+}
+.archive-list, 
+.latest-list {
+      grid-column: xl;
+}
+
+// Add underline of full paragraph (using for separating title+subtitle from document)
+.ajc-underline {border-bottom:1px solid black;} 
+
+
+// CHANGE SPACING OF SUBTITLE UNDER SUBTITLE FOR DATE ON PAGES
+.subtitle:not(.is-spaced) + .subtitle {
+  margin-top: -1.25rem;
+}
+
+
+// Formatting of inline footnote
+.inlinefootnote {margin:0.2em 1.0em; background: #ffffff; font-family: "courier new", "courier", "monospace"; line-height:1.4}
+
+
+// For Printing -- hide inline footnotes and display the footnote blocks
+@media print {
+.footnotes {display: block !important;}
+.inlinefootnote {display: none;}
+nav {display: none;}
+}

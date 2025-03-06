@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "@gethinode/netlify-plugin-dartsass": "^0.3.0"
+  }
+}

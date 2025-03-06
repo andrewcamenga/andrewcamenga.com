@@ -4,27 +4,48 @@
 // If you change fonts, you'll need to change this
 // @import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Domine");
 // SETUP VALUES FOR BULMA
-$family-primary: "Domine", serif; //If you chang4e these, change the google fonts line referenced above in GOOGLE FONTS
+$family-primary: "Domine", serif; 
 $family-secondary: "Barlow Semi Condensed", sans-serif;
-$body-line-height: 1.8;
-$widescreen-enabled: false;
-$fullhd-enabled: false;
 
 // PROCESS BULMA
-@import "bulma/bulma";
+// Import the components you need
+
+@use "bulma/sass" with (
+$family-primary: '"Domine",serif',                       // If you change these, change the google fonts line referenced above in GOOGLE FONTS
+$family-secondary:'"Barlow Semi Condensed", sans-serif', // If you change these, change the google fonts line referenced above in GOOGLE FONTS
+$body-line-height:1.8,
+$widescreen-enabled: false,
+$fullhd-enabled: false,
+$info: rgb(62, 138, 208)
+);
+@forward "bulma/sass/base";
+@forward "bulma/sass/components/card";
+@forward "bulma/sass/components/modal";
+@forward "bulma/sass/components/navbar";
+@forward "bulma/sass/elements/button";
+@forward "bulma/sass/elements/icon";
+@forward "bulma/sass/elements/content";
+@forward "bulma/sass/elements/notification";
+@forward "bulma/sass/elements/progress";
+@forward "bulma/sass/elements/tag";
+@forward "bulma/sass/layout/footer";
+
+// Import the themes so that all CSS variables have a value
+@forward "bulma/sass/themes";
+@use "bulma/sass/utilities/mixins";
 
 // ADDITIONAL CHANGES
 
 // Set default font size by viewing device
 html {
   font-size: 18px;
-  @include mobile {
+  @include mixins.mobile {
     font-size: 16px;
   }
-  @include tablet {
+  @include mixins.tablet {
     font-size: 16px;
   }
- @include desktop {
+ @include mixins.desktop {
     font-size: 18px;
   }
 
