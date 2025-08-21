@@ -7,6 +7,10 @@
 $family-primary: "Domine", serif; 
 $family-secondary: "Barlow Semi Condensed", sans-serif;
 
+// IMPORT THE GRID LAYOUT INFO FOR LISTS
+@use "ajc-archive-list" as *;
+@use "ajc-latest-list" as *;
+
 // PROCESS BULMA
 // Import the components you need
 
@@ -36,20 +40,7 @@ $info: rgb(62, 138, 208)
 
 // ADDITIONAL CHANGES
 
-// Set default font size by viewing device
-html {
-  font-size: 18px;
-  @include mixins.mobile {
-    font-size: 16px;
-  }
-  @include mixins.tablet {
-    font-size: 16px;
-  }
- @include mixins.desktop {
-    font-size: 18px;
-  }
 
-}
 
 // Set all headers as something other than the body font
 @media screen { 
@@ -62,11 +53,6 @@ html {
       font-family: $family-secondary;
     }
 }
-
-
-// IMPORT THE GRID LAYOUT INFO FOR LISTS
-@import "ajc-archive-list";
-@import "ajc-latest-list";
 
 
 // CREATE BASIC GRID LAYOUT FOR PAGES
