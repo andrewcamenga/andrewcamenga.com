@@ -92,10 +92,21 @@ experience:
         Organization: "Adams Center Seventh Day Baptist Church"
   Volunteer: 
     10: 
-      ? "General Council"
+      ? "President (Elect)"
+      :
+        Dates: "July 2025 — July 2027"
+        Description: |
+            Nominated and elected as President-Elect for the 2025-2026 General Conference ministry year. The expectation is that I will be nominated and elected as President for the 2026-2027 ministry year.
+            
+            The President-Elect prayerfully considers and develops a theme and initial outline for the Conference session held at the end of the ministry year. The plan is developed in collaboration with the General Council and appropriate members of the Coordinating Leadership Team. He also assists the president with "duties as assigned" usually related to the business portion of the Session.
+            
+            The President promotes the theme during the ministry year, completes the planning for the program of the session, recruits volunteers to help with various aspects of the schedule, and serves as the moderator of the business session.
+        Organization: Seventh Day Baptist General Conference
+    12: 
+      ? "General Council (member & chair)"
       : 
         Dates: |
-            May 2019 — Present | *chair* August 2021 — present <br/>
+            May 2019 — July 2025 | *chair* August 2021 — July 2025 <br/>
             **prior** January 2000 - August 2012, *ex-officio*
         Description: |
             The General Council of the Seventh Day Baptist General Conference shall "provide creative leadership and initiative for Seventh Day Baptists. It shall implement the resolutions and budget adopted by General Conference in session. It shall report annually to General Conference, including in its report an account of the implementation of previous General Conference action. The General Council shall act with the authority of General Conference in all denominational matters between sessions of General Conference."
