@@ -40,7 +40,19 @@ $info: rgb(62, 138, 208)
 
 // ADDITIONAL CHANGES
 
-
+// Set default font size by viewing device
+html {
+  font-size: 18px;
+  @include mixins.mobile {
+    font-size: 16px;
+  }
+  @include mixins.tablet {
+    font-size: 16px;
+  }
+ @include mixins.desktop {
+    font-size: 20px;
+  }
+}
 
 // Set all headers as something other than the body font
 @media screen { 
