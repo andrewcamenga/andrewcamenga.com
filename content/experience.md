@@ -106,7 +106,7 @@ experience:
       ? "General Council (member & chair)"
       : 
         Dates: |
-            May 2019—Present | *chair*, August 2021—present <br/>
+            May 2019—July 2025 | *chair*, August 2021—July 2025 <br/>
             **prior** January 2000—August 2012, *ex-officio*
         Description: |
             The General Council of the Seventh Day Baptist General Conference shall "provide creative leadership and initiative for Seventh Day Baptists. It shall implement the resolutions and budget adopted by General Conference in session. It shall report annually to General Conference, including in its report an account of the implementation of previous General Conference action. The General Council shall act with the authority of General Conference in all denominational matters between sessions of General Conference."
@@ -114,7 +114,7 @@ experience:
     13:
       ? "Chair, Executive Council"
       :
-        Dates: June 2018—Present
+        Dates: June 2018—June 2026
         Description: |
             The Executive Council of the Apalachian Seventh Day Baptist Association coordinates the ministry and organization of the Association between sessions. The Association consists of a dozen churches spread from Alabama in the south to Ohio and Pennsylvania in the north.
         Organization: The Apalachian Seventh Day Baptist Association
