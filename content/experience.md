@@ -15,7 +15,7 @@ experience:
     20: 
       ? "Bachelor of Science (Physics and Math)"
       : 
-        Dates: 1988-1992
+        Dates: 1988—1992
         Location: "Houghton, NY"
         Organization: "Houghton College"
   Endorsements:
@@ -49,7 +49,7 @@ experience:
     20: 
       ? "Executive Director"
       : 
-        Dates: "January 2000 - December 2014"
+        Dates: "January 2000—December 2014"
         Description: |
             The executive director has primary responsibility for leading the Board in
             * guiding planning (budget, event, strategic),
@@ -65,7 +65,7 @@ experience:
     30: 
       ? "Editor in Chief"
       :
-        Dates: October 2004 - November 2014
+        Dates: October 2004—November 2014
         Description: |
             This role was carried in conjunction with my service as the executive director for the Seventh Day Baptist Board of Christian Education.
             
@@ -74,7 +74,7 @@ experience:
     40: 
       ? "General Editor"
       :
-        Dates: December 1999 – April 2005
+        Dates: December 1999—April 2005
         Description: |
             Production of 'camera ready' content for The Helping Hand in Bible Study (an Sabbath School quarterly for adults). Tasks included writing, recruiting writers, copy editing, page layout in PageMaker and InDesign, and submitting copy to printers.
         Organization: Helping Hand in Bible Study
@@ -106,8 +106,8 @@ experience:
       ? "General Council (member & chair)"
       : 
         Dates: |
-            May 2019 — July 2025 | *chair* August 2021 — July 2025 <br/>
-            **prior** January 2000 - August 2012, *ex-officio*
+            May 2019 — Present | *chair* August 2021 — present <br/>
+            **prior** January 2000—August 2012, *ex-officio*
         Description: |
             The General Council of the Seventh Day Baptist General Conference shall "provide creative leadership and initiative for Seventh Day Baptists. It shall implement the resolutions and budget adopted by General Conference in session. It shall report annually to General Conference, including in its report an account of the implementation of previous General Conference action. The General Council shall act with the authority of General Conference in all denominational matters between sessions of General Conference."
         Organization: Seventh Day Baptist General Conference 
@@ -121,7 +121,7 @@ experience:
     15:
       ? "Secretary"
       :
-        Dates: August 2020 — Present<br/>**member** August 2015 — Present
+        Dates: August 2020—Present<br/>**member** August 2015—Present
         Description: |
             The Southern Cove / Yellow Creek Ministerium is a group of pastors from churches in or near the southern end of Morrison's Cove in PA—roughly corresponding to the boundaries of the Northern Bedford County School District. The pastors work together, finding ways to cooperate for the sake of the gospel.
         Organization: Southern Cove / Yellow Creek Ministerium
@@ -136,7 +136,7 @@ experience:
     20: 
       ? "Instructor, S D B-U (Seventh Day Baptist \"University\")"
       : 
-        Dates: Each Fall from 2018 — Present
+        Dates: Each Fall from 2018—Present
         Description: |
             Responsible for teaching SDBU-250, "Introduction to Theology," an approximately 15-week online course.
             
@@ -148,28 +148,28 @@ experience:
     25:
       ? "President"
       :
-       Dates: September 2015 — Present
+       Dates: September 2015—Present
        Description: |
            I'm serving with a group of colleagues to start The Seventh Day Baptist Theoogical Society. We've described it this way: "The Society exists to cultivate disciplined scholarship among Seventh Day Baptists by providing outlets for the written and oral expression of thought and research in theological studies in order to strengthen the work and witness of Seventh Day Baptists."
        Organization: Seventh Day Baptist Theological Society
     30: 
       ? "Training Director / Staff"
       : 
-        Dates: June 2007 — August 2019
+        Dates: June 2007—August 2019
         Description: |
             Summer Christian Service Corps (SCSC) is a leadership development program for Seventh Day Baptists. It provides college-age young adults with the opportunity to volunteer for summer service to Seventh Day Baptist churches and ministries. In addition to the service component, SCSC includes a 10-day pre-service training session for the project directors (PDs) and student volunteers.
             
-            From **2007-2015** I was a staff member for the pre-service training session. My primary responsibility was teaching 2-3 classes each year on the gospel or practical Christian education.
+            From **2007–2015** I was a staff member for the pre-service training session. My primary responsibility was teaching 2-3 classes each year on the gospel or practical Christian education.
             
             I served as the Training Director from **August 2015 through August 2019**. My responsibilities included recruiting staff, designing the training program, overseeing an evaluation process, and working with an oversight committee to establish and execute the program's training goals & to help them evaluate proposals for alternative leadership development programs.
         Organization: Summer Christian Service Corp (SCSC)
     40: 
       Trustee: 
-        Dates: January 2004 — December 2014
+        Dates: January 2004—December 2014
         Description: |
-            Responsible for the care and upkeep of the facilities of the church. Served as chair of trustees from **2008 - 2014**.
+            Responsible for the care and upkeep of the facilities of the church. Served as chair of trustees from **2008–2014**.
             
-            In **2013-14**, the trustees guided the church through planning a three phase construction plan and completing the first phase: building a 4,800 sq. ft.steel building. At the conclusion of my time on the trustees, the building was constructed and the church was beginning to look to the second phase: construction of a kitchen inside the building.
+            In **2013–14**, the trustees guided the church through planning a three phase construction plan and completing the first phase: building a 4,800 sq. ft.steel building. At the conclusion of my time on the trustees, the building was constructed and the church was beginning to look to the second phase: construction of a kitchen inside the building.
             
             The purpose for building was to increase ministry opportunities for the church by providing greater space for fellowship meals, events for the community, and christian education space.
         Location: Little Genesee, NY
@@ -186,7 +186,7 @@ experience:
     10: 
       ? "Summer Pastor"
       : 
-        Dates: "June 1994 - August 1994"
+        Dates: "June–August 1994"
         Description: |
             Carried pastoral responsibilities (preaching, visitation, etc.) while working with a mentor pastor in Little Genesee, NY.
         Location: "Richburg, NY"
@@ -194,7 +194,7 @@ experience:
     20: 
       ? "Pastoral Intern"
       : 
-        Dates: "June 1993 - August 1993"
+        Dates: "June–August 1993"
         Description: |
             Internship with intentional training in sermon preparation & delivery, pre-marital counseling, membership / baptismal training, camp directing, and a other miscellaneous topics.
         Location: "North Loup, NE"
@@ -203,8 +203,8 @@ experience:
       ? "Summer Director of Youth Ministry"
       : 
         Dates: |
-            June 1992- August 1992; <br/>
-            June 1991 - August 1991
+            June–August 1992; <br/>
+            June–August 1991
         Description: |
             Completed several training modules that focused on developing and doing Christian Education in the local church.
             
