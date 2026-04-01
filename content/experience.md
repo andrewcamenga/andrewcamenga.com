@@ -31,7 +31,7 @@ experience:
     20: 
       ? "Accreditation"
       : 
-        Dates: August 1999, **renewed** 2019
+        Dates: August 1999, **renewed** 2019, 2024
         Organization: "Seventh Day Baptist General Conference, USA & Canada, Ltd."
         Description: |
             Because Ordination is a local church function, the Seventh Day Baptist General Council created an accreditation process to recognize individuals who have been ordained by a local church, who have obtained a requisite combination of experience and education, who have maintained a faithful witness in the context of a local congregation, and who are continuing to pursue educational experience.
