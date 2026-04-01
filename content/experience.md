@@ -94,7 +94,7 @@ experience:
     10: 
       ? "President (Elect)"
       :
-        Dates: "July 2025 — July 2027"
+        Dates: "July 2025—July 2027"
         Description: |
             Nominated and elected as President-Elect for the 2025-2026 General Conference ministry year. The expectation is that I will be nominated and elected as President for the 2026-2027 ministry year.
             
@@ -106,7 +106,7 @@ experience:
       ? "General Council (member & chair)"
       : 
         Dates: |
-            May 2019 — Present | *chair* August 2021 — present <br/>
+            May 2019—Present | *chair*, August 2021—present <br/>
             **prior** January 2000—August 2012, *ex-officio*
         Description: |
             The General Council of the Seventh Day Baptist General Conference shall "provide creative leadership and initiative for Seventh Day Baptists. It shall implement the resolutions and budget adopted by General Conference in session. It shall report annually to General Conference, including in its report an account of the implementation of previous General Conference action. The General Council shall act with the authority of General Conference in all denominational matters between sessions of General Conference."
@@ -114,7 +114,7 @@ experience:
     13:
       ? "Chair, Executive Council"
       :
-        Dates: June 2018 — Present
+        Dates: June 2018—Present
         Description: |
             The Executive Council of the Apalachian Seventh Day Baptist Association coordinates the ministry and organization of the Association between sessions. The Association consists of a dozen churches spread from Alabama in the south to Ohio and Pennsylvania in the north.
         Organization: The Apalachian Seventh Day Baptist Association
@@ -176,7 +176,7 @@ experience:
         Organization: First Seventh Day Baptist Church of Genesee
     90: 
       Treasurer:
-        Dates: August 1984 — August 1985
+        Dates: August 1984—August 1985
         Organization: National Seventh Day Baptist Youth Fellowship
         Description: |
             Listing this one just for fun.
