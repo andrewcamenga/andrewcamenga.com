@@ -1,4 +1,4 @@
----
+ï»¿---
 date: 2026-05-26 19:00:00
 slug: dont-shrink-back
 title: Don't Shrink Back
@@ -150,7 +150,7 @@ asked the right question. And Jesus was ready to help him see.
 Tonight, You've heard the story Jesus told.
 
 A man, beaten, robbed, and left for dead,  
-He was ignored—actively avoided—by two of his own people.  
+He was ignoredâ€”actively avoidedâ€”by two of his own people.  
 He was finally helped, in all the ways, by an outsider---seen, met, bandaged, anointed, carried, treated,
 and paid for.
 
