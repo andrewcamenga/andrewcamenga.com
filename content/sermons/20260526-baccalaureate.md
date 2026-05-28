@@ -15,6 +15,8 @@ location: Loysburg, PA
 - **Text**: Luke 10:25-37
 - **Note**: This manuscript includes some presentation guidance. Those notes were left in to provide cues that would have been handled in other ways were this prose. 
 
+## Welcome
+
 Parents, family, friends, teachers, staff, administrators: Welcome.
 
 In just a couple of nights many of us will be gathering for the
@@ -42,7 +44,7 @@ shrink back from answering them.
 The lawyer who challenged Jesus was asking "What kind of person should I
 be?" --- he just didn't expect the answer would, in turn, challenge him.
 
-# Don't shrink back from naming your convictions.
+## Don't shrink back from naming your convictions.
 
 Jesus did not answer the lawyer's question, "What must I do to inherit
 eternal life?" Instead, he returned a question: "What do you think? What
@@ -88,7 +90,7 @@ Answer the question\
 What kind of person do you want to be?\
 What does it take for you to flourish?
 
-# Don't shrink back from evaluating yourself in the light of your convictions.
+## Don't shrink back from evaluating yourself in the light of your convictions.
 
 The lawyer named his conviction and discovered that Jesus agreed. You'd
 think the lawyer could be standing there with confidence.
@@ -143,7 +145,7 @@ your conviction.
 Surprisingly, even though the lawyer was seeking to justify himself, he
 asked the right question. And Jesus was ready to help him see.
 
-# Don't shrink back from embracing a godly call to change.
+## Don't shrink back from embracing a godly call to change.
 
 Tonight, You've heard the story Jesus told.
 
@@ -186,7 +188,7 @@ will you shrink back?
 
 (pause, then turn back to auditorium)
 
-# CALL TO ACTION
+## CALL TO ACTION
 
 Graduates, parents, family, friends,
 teachers, staff, administrators:
