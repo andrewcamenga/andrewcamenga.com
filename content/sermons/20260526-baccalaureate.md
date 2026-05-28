@@ -2,7 +2,7 @@
 date: 2026-05-26 19:00:00
 slug: dont-shrink-back
 title: Don't Shrink Back
-subtitle: a call to change when you discover you don't match your convictions
+subtitle: refuse to avoid the hard work of naming, evaluating by, and living into your conviction
 categories: [sermons]
 description: Presented at the Northern Bedford High School Baccalaureate Service, Loysburg, PA
 summary: There were no audio or video recordings made. This messages mines the interaction between Jesus and Lawyer in Luke 10 to inform a call to name convictions, evaluate self in their light, and change as necessary.
