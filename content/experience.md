@@ -96,7 +96,7 @@ experience:
       :
         Dates: "Elect, July 2025—July 2026 <br/>President, July 2026—July 2027"
         Description: |
-            Nominated and elected as President-Elect for the 2025-2026 General Conference ministry year. The expectation is that I will be nominated and elected as President for the 2026-2027 ministry year.
+            Nominated and elected as President-Elect for the 2025-2026 General Conference ministry year, and as President for the 2026-2027 ministry year.
             
             The President-Elect prayerfully considers and develops a theme and initial outline for the Conference session held at the end of the ministry year. The plan is developed in collaboration with the General Council and appropriate members of the Coordinating Leadership Team. He also assists the president with "duties as assigned" usually related to the business portion of the Session.
             
@@ -117,6 +117,7 @@ experience:
         Dates: June 2018—June 2026
         Description: |
             The Executive Council of the Apalachian Seventh Day Baptist Association coordinates the ministry and organization of the Association between sessions. The Association consists of a dozen churches spread from Alabama in the south to Ohio and Pennsylvania in the north.
+            I stepped down in June 2026 to facilitate serving as the President of the Seventh Day Baptist General Conference during the 2026-27 ministry year.
         Organization: The Apalachian Seventh Day Baptist Association
     15:
       ? "Secretary"
