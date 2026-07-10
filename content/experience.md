@@ -94,7 +94,7 @@ experience:
     10: 
       ? "President "
       :
-        Dates: "President Elect, July 2025–July2026;  President, July 2026–July 2027"
+        Dates: "Elect, July 2025—July 2026 <br/>President, July 2026—July 2027"
         Description: |
             Nominated and elected as President-Elect for the 2025-2026 General Conference ministry year. The expectation is that I will be nominated and elected as President for the 2026-2027 ministry year.
             
