@@ -10,7 +10,7 @@ removePathAccents = true
 theme = "ajc"
 
 [permalinks]
-note = "/note/:2006-:01-:02-:1504"
+notes = "/notes/:2006-:01-:02-:1504"
 
 [markup.goldmark.renderer]
 unsafe= true
