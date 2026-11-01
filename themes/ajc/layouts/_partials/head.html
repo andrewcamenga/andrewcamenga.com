@@ -2,7 +2,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        {{ $buildTime := now.Format "Jan 2, 2006 at 3:04pm (MST)" }}{{ printf `<meta name="build-time" content="%s">` $buildTime | safeHTML }}
+        {{ $buildTime := now.UTC.Format "Jan 2, 2006 at 3:04pm (MST)" }}{{ printf `<meta name="build-time" content="%s">` $buildTime | safeHTML }}
         
         <title>AJC | {{ .Title }}</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Domine">
