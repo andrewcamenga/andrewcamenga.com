@@ -11,7 +11,6 @@
 	  "targetPath" "css/style.css"
 	  "vars" site.Params.styles
 	  "enableSourceMap" (not hugo.IsProduction)
-	  "includePaths" (slice "node_modules/bootstrap/scss")
 	}}
 	{{ with resources.Get "ajc.scss" | toCSS $opts | minify | fingerprint }}
 	  <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
